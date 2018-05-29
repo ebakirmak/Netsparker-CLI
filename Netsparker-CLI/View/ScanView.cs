@@ -18,8 +18,9 @@ namespace Netsparker_CLI.View
         /// </summary>
         public static void SetNetsparkerConfigs()
         {
-            Console.Write("Netsparker .exe konumunu giriniz: ");
+            Console.Write(@" Netsparker.exe için C:\Program Files\Netsparker konumunu değiştmek istiyorsanız yeni bir konum giriniz değiştirmek istemiyorsanız boş bırakın.: ");
             string path = Console.ReadLine();
+            ////////////////////////////////////////////////////////////////////////////////////////////////////
             string reportLocate = "";
             do
             {
@@ -40,6 +41,8 @@ namespace Netsparker_CLI.View
                 reportLocation = @"C:\reports\";
                 Console.WriteLine("Raporlar " + reportLocation + " konumunda oluşturulacakır.");
             }
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             netsparkerModel.SetConfigs(path,reportLocation);
         }
 
@@ -66,7 +69,8 @@ namespace Netsparker_CLI.View
             string target = Console.ReadLine();
 
             ScanController scanController = new ScanController();
-            Console.WriteLine(scanController.ScanCreate(netsparkerManager, target));
+            if(scanController.ScanCreate(netsparkerManager, target))
+                Console.WriteLine("Tarama başarılı bir şekilde tamamlandı. XML Dosyası " + GetReportLocation() + " konumunda oluşturuldu.");
         }
     }
 }

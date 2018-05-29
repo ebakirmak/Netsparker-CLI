@@ -23,10 +23,11 @@ namespace Netsparker_CLI
                 string path = ScanView.GetNetsparkerPath();
                 string reportLocation = ScanView.GetReportLocation();
 
-                using (NetsparkerSession session = new NetsparkerSession())
+                using (NetsparkerSession session = new NetsparkerSession(path))
                 {
+                    if (session.NetsparkerCLIState()) { 
                     
-                    using (NetsparkerManager manager = new NetsparkerManager(session, path, reportLocation))
+                    using (NetsparkerManager manager = new NetsparkerManager(session, reportLocation))
                     {
                     
 
@@ -63,24 +64,26 @@ namespace Netsparker_CLI
                                 //case "F":
                                 //    ScanView.SaveScanVulnerabilitiesAsXML(manager);
                                 //    break;
-                                //case "Q":
-                                //    break;
+                                case "Q":
+                                    break;
                                 default:
                                         Console.WriteLine("\n***Hatalı Seçim. Lütfen Seçiminizi kontrol ediniz.***\n");
                                         break;
                                 }
-                            } while (inputSelection != "Q");
+                            } while (inputSelection.ToUpper() != "Q");
                         }
-                        
+                        Console.WriteLine("Başarılı bir şekilde çıkış işlemi gerçekleştirildi.");
                         Console.Read();
-                    }           
-                
+                    }
+                }
+
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                Console.WriteLine(ex.Message);
+              
             }
+            Console.Read();
         }
 
 

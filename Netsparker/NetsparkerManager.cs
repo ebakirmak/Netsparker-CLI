@@ -10,8 +10,6 @@ namespace Netsparker
     {
         private NetsparkerSession Session { get; set; }
 
-        private string NetsparkerPath { get; set; }
-
         public string ReportLocation { get; set; }
 
         /// <summary>
@@ -20,13 +18,14 @@ namespace Netsparker
         /// <param name="session"></param>
         /// <param name="netsparkerPath">Application Path</param>
         /// <param name="reportLocation">The report Location that was created</param>
-        public NetsparkerManager(NetsparkerSession session, string netsparkerPath, string reportLocation)
+        public NetsparkerManager(NetsparkerSession session, string reportLocation)
         {
             if (session != null)
             {
                 this.Session = session;
                 this.ReportLocation = reportLocation;
-                this.NetsparkerPath = netsparkerPath;
+
+
             }
         }
 
@@ -55,7 +54,7 @@ namespace Netsparker
                 if (this.Session != null)
                 {
                   
-                    return Session.ExecuteCommand(this.NetsparkerPath,"/a" + (" /url " + url) + (" /r " + "\"" + this.ReportLocation +@"scan_report.xml" + "\" ") + "/rt " + "\"Vulnerabilities List (XML)\"","Scan");
+                    return Session.ExecuteCommand("/a" + (" /url " + url) + (" /r " + "\"" +this.ReportLocation + @"scan_report_"+ Guid.NewGuid() +".xml" + "\" ") + "/rt " + "\"Vulnerabilities List (XML)\"","Scan");
                 }
                 else
                     return false;
@@ -71,7 +70,7 @@ namespace Netsparker
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+     
         }
 
 
