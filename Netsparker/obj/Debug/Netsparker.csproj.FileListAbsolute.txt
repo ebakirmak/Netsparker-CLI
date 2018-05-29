@@ -1,0 +1,6 @@
+C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker\bin\Debug\Netsparker.dll
+C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker\bin\Debug\Netsparker.pdb
+C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker\obj\Debug\Netsparker.csproj.CoreCompileInputs.cache
+C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker\obj\Debug\Netsparker.dll
+C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker\obj\Debug\Netsparker.pdb
+C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker\obj\Debug\Netsparker.csprojResolveAssemblyReference.cache
