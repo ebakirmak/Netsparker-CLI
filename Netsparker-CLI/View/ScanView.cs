@@ -69,7 +69,7 @@ namespace Netsparker_CLI.View
             string target = Console.ReadLine();
 
             ScanController scanController = new ScanController();
-            if(scanController.ScanCreate(netsparkerManager, target,null,null,null))
+            if(scanController.ScanCreate(netsparkerManager, target, "http://172.17.6.91:8000/login.php","admin","password"))
                 Console.WriteLine("Tarama başarılı bir şekilde tamamlandı. XML Dosyası " + GetReportLocation() + " konumunda oluşturuldu.");
         }
     }

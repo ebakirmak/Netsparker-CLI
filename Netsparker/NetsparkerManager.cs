@@ -38,14 +38,17 @@ namespace Netsparker
         /// </summary>
         /// <param name="command">String in valid command type</param>
         /// <returns></returns>
-        public bool CreateScan(string url)
+        public bool CreateScan(string url,bool profile)
         {
             try
             {
-                if (this.Session != null)
+                if (this.Session != null && profile == false)
+                {                  
+                    return Session.ExecuteCommand("/a / " + (" /url " + url) + (" /report " + "\"" +this.ReportLocation + @"scan_report_"+ Guid.NewGuid() +".xml" + "\" ") + "/reporttemplate " + "\"Vulnerabilities List (XML)\"","Scan");
+                }
+                else if(this.Session != null && profile == true)
                 {
-                  
-                    return Session.ExecuteCommand("/a" + (" /url " + url) + (" /report " + "\"" +this.ReportLocation + @"scan_report_"+ Guid.NewGuid() +".xml" + "\" ") + "/reporttemplate " + "\"Vulnerabilities List (XML)\"","Scan");
+                    return Session.ExecuteCommand("/a  /profile "+ "\"" +"Default_Policy" + "\" " + (" /url " + url) + (" /report " + "\"" + this.ReportLocation + @"scan_report_" + Guid.NewGuid() + ".xml" + "\" ") + "/reporttemplate " + "\"Vulnerabilities List (XML)\"", "Scan");
                 }
                 else
                     return false;

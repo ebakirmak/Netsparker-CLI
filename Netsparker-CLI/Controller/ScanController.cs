@@ -25,7 +25,7 @@ namespace Netsparker_CLI.Controller
         {
             try
             {
-               return netsparkerManager.CreateScan(target);
+               return netsparkerManager.CreateScan(target,false);
             }
             catch (Exception ex)
             {
@@ -41,26 +41,26 @@ namespace Netsparker_CLI.Controller
             {
 
                 //Target URL için
-                XMLNodeEdit("/ScanProfile/TargetUrl", "TargetUrl", "test1");
+                XMLNodeEdit("/ScanProfile/TargetUrl", "TargetUrl", target);
 
                 //LogOutFormURL için
-                XMLNodeEdit("/ScanProfile/FormAuthenticationSettings/LogoutRedirectPattern", "LogoutRedirectPattern", "test2");
+                XMLNodeEdit("/ScanProfile/FormAuthenticationSettings/LogoutRedirectPattern", "LogoutRedirectPattern", LogInFormURL);
 
                 //LogInFormURL için
-                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings", "LoginFormUrl","test3");
+                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings", "LoginFormUrl",LogInFormURL);
 
                 //Username İçin
-                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Username", "test4");
+                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Username", username);
 
                 //Password İçin
-                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Password", "test5");
+                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Password", password);
 
                 //Password Encrypted İçin
                 XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "IsPasswordEncrypted", "false");
 
+                System.IO.File.Copy(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml", @"C:\Users\emreakirmak\Documents\Netsparker\Profiles\Default_Policy.xml",true);
 
-
-                return netsparkerManager.CreateScan(target);
+                return netsparkerManager.CreateScan(target,true);
             }
             catch (Exception ex)
             {
@@ -73,9 +73,9 @@ namespace Netsparker_CLI.Controller
         private void XMLNodeEdit(string NodePath,string Node, string Value)
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load(@"C:\Users\emreakirmak\Desktop\Netsparker-CLI - Copy.xml");
+            doc.Load(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
             doc.DocumentElement.SelectSingleNode(NodePath).InnerText = Value;
-            doc.Save(@"C:\Users\emreakirmak\Desktop\Netsparker-CLI - Copy.xml");
+            doc.Save(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
           
 
 
@@ -84,9 +84,9 @@ namespace Netsparker_CLI.Controller
         private void XMLAttributeEdit(string NodePath, string Node, string Value)
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load(@"C:\Users\emreakirmak\Desktop\Netsparker-CLI - Copy.xml");
+            doc.Load(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
             doc.DocumentElement.SelectSingleNode(NodePath).Attributes[Node].Value = Value;
-            doc.Save(@"C:\Users\emreakirmak\Desktop\Netsparker-CLI - Copy.xml");
+            doc.Save(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
             
         }
     }
