@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScanProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PolicyId>f2e45135-aa78-4bdf-b7e4-79a62fc03e2e</PolicyId>
+  <ReportPolicyId>3990df1f-cb26-46b4-a8e9-854a72f717de</ReportPolicyId>
+  <ExcludedLinks>
+    <string>(log|sign)\-?(out|off)</string>
+    <string>exit</string>
+    <string>endsession</string>
+  </ExcludedLinks>
+  <Cookies />
+  <TargetUrl>http://172.17.6.91:8000/vulnerabilities/sqli/</TargetUrl>
+  <AdditionalWebsites />
+  <ExcludeLinks>true</ExcludeLinks>
+  <Scope>EnteredPathAndBelowScope</Scope>
+  <UsedInSchedule>false</UsedInSchedule>
+  <ImportedLinks />
+  <ScanMode>Normal</ScanMode>
+  <ParallelAttackerEnabled>true</ParallelAttackerEnabled>
+  <FormAuthenticationSettings Enabled="true" LoginFormUrl="http://172.17.6.91:8000/login.php">
+    <Personas>
+      <FormAuthenticationPersona Username="admin" Password="password" IsPasswordEncrypted="false" IsActive="true" />
+    </Personas>
+    <LogoutRedirectPattern>http://172.17.6.91:8000/login.php</LogoutRedirectPattern>
+    <OverrideTargetUrlWithAuthenticatedPage>false</OverrideTargetUrlWithAuthenticatedPage>
+    <DetectBearerToken>true</DetectBearerToken>
+  </FormAuthenticationSettings>
+  <NtlmBasicDigestAuthenticationSettings Enabled="false" />
+  <ClientCertificateAuthenticationSettings Enabled="false" />
+  <UrlRewriteBlockSeparators>
+    <char>47</char>
+    <char>36</char>
+    <char>46</char>
+    <char>44</char>
+    <char>59</char>
+    <char>124</char>
+    <char>58</char>
+  </UrlRewriteBlockSeparators>
+  <UrlRewriteAnalyzableExtensions>
+    <string>htm</string>
+    <string>html</string>
+  </UrlRewriteAnalyzableExtensions>
+</ScanProfile>

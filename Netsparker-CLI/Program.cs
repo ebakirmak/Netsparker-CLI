@@ -36,11 +36,6 @@ namespace Netsparker_CLI
                             {
                                 Console.Write("\nYapmak istediğiniz işlemi seçiniz." +
                                               "\nA: Tarama Oluşturmak İçin" +
-                                              "\nB: Tarama ID döndürmek için " +
-                                              "\nC: Tarama Durumunu Görüntülemek İçin" +
-                                              "\nD: Tarama Silmek İçin" +
-                                              "\nE: Zafiyetleri Görmek İçin" +
-                                              "\nF: Zafiyetleri XML Olarak Masaüstüne Kaydet" +
                                               "\nQ: Çıkış İçin" +
                                               "\nSeçiminiz: ");
                                 inputSelection = Console.ReadLine().ToUpper();
@@ -49,21 +44,6 @@ namespace Netsparker_CLI
                                 case "A":
                                     ScanView.ScanCreate(manager);
                                     break;
-                                //case "B":
-                                //    ScanView.GetScan(manager);
-                                //    break;
-                                //case "C":
-                                //    ScanView.GetScanStatus(manager);
-                                //    break;
-                                //case "D":
-                                //    ScanView.DeleteScan(manager);
-                                //    break;
-                                //case "E":
-                                //    ScanView.ShowScanVulnerabilities(manager);
-                                //    break;
-                                //case "F":
-                                //    ScanView.SaveScanVulnerabilitiesAsXML(manager);
-                                //    break;
                                 case "Q":
                                     break;
                                 default:

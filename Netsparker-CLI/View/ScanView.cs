@@ -69,7 +69,7 @@ namespace Netsparker_CLI.View
             string target = Console.ReadLine();
 
             ScanController scanController = new ScanController();
-            if(scanController.ScanCreate(netsparkerManager, target))
+            if(scanController.ScanCreate(netsparkerManager, target,null,null,null))
                 Console.WriteLine("Tarama başarılı bir şekilde tamamlandı. XML Dosyası " + GetReportLocation() + " konumunda oluşturuldu.");
         }
     }
