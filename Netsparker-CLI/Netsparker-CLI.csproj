@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\PolicyController.cs" />
     <Compile Include="Controller\ScanController.cs" />
+    <Compile Include="Controller\ScannerController.cs" />
     <Compile Include="Model\NetsparkerModel.cs" />
+    <Compile Include="Model\PolicyModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\ScanView.cs" />
@@ -58,7 +61,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelXML\Default_Policy.xml" />
+    <Content Include="ModelXML\Policies\All_Scan.xml" />
+    <Content Include="ModelXML\Policies\Based Scan.xml" />
+    <Content Include="ModelXML\Policies\Command Injection.xml" />
+    <Content Include="ModelXML\Policies\CSRF.xml" />
+    <Content Include="ModelXML\Policies\RFI-LFI.xml" />
+    <Content Include="ModelXML\Policies\SQL Injection.xml" />
+    <Content Include="ModelXML\Policies\SSRF.xml" />
+    <Content Include="ModelXML\Policies\XSS.xml" />
+    <Content Include="ModelXML\Profile\Default_Profile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

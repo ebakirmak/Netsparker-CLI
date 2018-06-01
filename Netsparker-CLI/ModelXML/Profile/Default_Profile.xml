@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScanProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <PolicyId>f2e45135-aa78-4bdf-b7e4-79a62fc03e2e</PolicyId>
+  <PolicyId>41a21baf-8062-421b-9a93-a06b1afa8ed4</PolicyId>
   <ReportPolicyId>3990df1f-cb26-46b4-a8e9-854a72f717de</ReportPolicyId>
   <ExcludedLinks>
     <string>(log|sign)\-?(out|off)</string>
@@ -8,7 +8,7 @@
     <string>endsession</string>
   </ExcludedLinks>
   <Cookies />
-  <TargetUrl>http://172.17.6.91:8000/vulnerabilities/sqli/</TargetUrl>
+  <TargetUrl>http://172.17.6.91:8000/vulnerabilities/fi/?page=include.php</TargetUrl>
   <AdditionalWebsites />
   <ExcludeLinks>true</ExcludeLinks>
   <Scope>EnteredPathAndBelowScope</Scope>

@@ -2,14 +2,13 @@
 using Netsparker_CLI.View;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 /// <summary>
-/// Netsparker-CLI, Komut satırını kullanarak Netsparker'da zafiyet tarama işlemlerini gerçekleştirir.
-/// İlk olarak Netsparker'ı ortam değişkenlerine ekleyiniz. Aşağıdaki linke göz atabilirsiniz.
-/// https://www.netsparker.com/blog/docs-and-faqs/triggering-netsparker-remotely-windows-management-instrumentation/#AddingtheNetsparkerFilePathtotheEnvironmentVariables///  
+/// Netsparker-CLI, Komut satırı arayüzünü kullanarak Netsparker'da zafiyet tarama işlemlerini gerçekleştirir.
 /// </summary>
 namespace Netsparker_CLI
 {
@@ -19,8 +18,11 @@ namespace Netsparker_CLI
         {
             try
             {
+                
                 ScanView.SetNetsparkerConfigs();
+              
                 string path = ScanView.GetNetsparkerPath();
+
                 string reportLocation = ScanView.GetReportLocation();
 
                 using (NetsparkerSession session = new NetsparkerSession(path))

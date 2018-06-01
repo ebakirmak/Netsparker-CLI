@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScanPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="41a21baf-8062-421b-9a93-a06b1afa8ed4" Version="13">
+  <Description>Performs RFI and LFI checks.</Description>
+  <Engines>
+    <Engine Id="9c48c69a-0110-461b-9353-151e01893f81">
+      <Settings />
+      <Patterns>
+        <Pattern Id="e1060b59-1869-422a-aff9-f1d2e4bc071f" />
+        <Pattern Id="b25b968f-cd71-4717-a259-7147320fda72" />
+        <Pattern Id="1c2845c9-67bd-4ee0-ae38-44a9d78d80da" />
+        <Pattern Id="5bcf34df-67b3-4699-ac4d-7c009aafd203" />
+        <Pattern Id="0672d1d6-0225-44df-a5b2-c6c404baf525" />
+        <Pattern Id="fb102bec-5b37-4157-8fb1-472b8a82f715" />
+        <Pattern Id="199ddc4d-c568-41ea-9165-81b58904567b" />
+        <Pattern Id="aaec68da-3932-4fc5-8544-cbc5f299752b" />
+        <Pattern Id="e1aeac78-dd17-4e98-9e24-fede9130e9da" />
+        <Pattern Id="0fd2f199-d693-4e9f-95b2-5607cf084c0a" />
+        <Pattern Id="be24784d-d410-44e2-8d0c-3c0597749312" />
+      </Patterns>
+    </Engine>
+    <Engine Id="c3c7eb28-c736-4499-8779-52456a5ce735">
+      <Settings />
+      <Patterns>
+        <Pattern Id="f014feaa-fd46-4b1b-a7b7-f8c3e3c74d5c" />
+        <Pattern Id="022795b9-0039-4ec9-ab22-fae0c1504267" />
+        <Pattern Id="9eba36c0-698a-438f-b3cb-40f7a656d1e8" />
+        <Pattern Id="05717dbd-59d9-42df-a671-b581b6c9278d" />
+        <Pattern Id="20bf8ac3-0f3e-4929-811d-b8c01c61fa69" />
+        <Pattern Id="9e82a5b4-6e08-4da5-b912-460553313382" />
+      </Patterns>
+    </Engine>
+    <Engine Id="175d5167-3598-4813-8e26-14519927b8b5">
+      <Settings />
+      <Patterns>
+        <Pattern Id="3465edc6-a9d7-4b70-ad22-39190db02d1b" />
+        <Pattern Id="c0c81d87-4610-4aa9-b948-1758aa91f336" Version="10" />
+        <Pattern Id="46b935a0-2d0f-4a57-b50c-ea9a834e23ca" Version="10" />
+        <Pattern Id="b7480db0-b5f8-4ce7-9468-47ddc687152d" Version="5" />
+        <Pattern Id="983c9158-9e82-419c-8f91-0300fb98fd7e" Version="5" />
+        <Pattern Id="86ec91aa-f9e1-4daf-af1c-ad753636f540" Version="5" />
+        <Pattern Id="7f85ad9f-d867-4ef5-a25e-dd997713abb9" Version="10" />
+        <Pattern Id="0e2edff4-08ee-4e06-9d4f-6e308a8dbe4c" Version="2" />
+        <Pattern Id="ad5a9f17-43dc-4c53-943e-427986088890" Version="7" />
+        <Pattern Id="0461eba7-799d-448e-9e75-f0c1692e361d" />
+        <Pattern Id="a9dbc8e2-a4fd-463f-a109-5c2c1334e8c2" />
+        <Pattern Id="33cd795b-338f-44ab-98ba-3066e035c2ba" />
+        <Pattern Id="b8c1b3ee-4e18-4e0f-b99a-67ee3626798a" />
+        <Pattern Id="7debc750-8a83-4d50-a682-d7a39ba0fe94" />
+        <Pattern Id="a7524e66-2f9b-4732-8181-d4b9499a4d28" />
+        <Pattern Id="d1c1851e-3a09-4ff2-a14b-02380c7a4dd3" />
+        <Pattern Id="eac021bb-7b3d-4254-8386-3b62fb7c70e9" />
+      </Patterns>
+    </Engine>
+  </Engines>
+  <ResourceModifiers />
+  <Settings>
+    <CustomHeaders>
+      <CustomHeader Name="X-Scanner" Value="Netsparker" Enabled="true" />
+    </CustomHeaders>
+    <FormValues>
+      <FormValue Name="Email" Value="netsparker@example.com" Pattern="(?im)[\w\d]*mail[\w\d]*" Match="RegEx" MatchTarget="1" Type="email" Force="false" Ordinal="0" />
+      <FormValue Name="Name" Value="Smith" Pattern="(?im)[\w\d]*name|login|user[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Date" Value="01/01/2011" Pattern="(?im)[\w\d]*date[\w\d]*" Match="RegEx" MatchTarget="1" Type="date" Force="false" Ordinal="0" />
+      <FormValue Name="Birth" Value="01/01/1987" Pattern="(?im)[\w\d]*birth[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Before" Value="01/01/2030" Pattern="(?im)[\w\d]*before[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="After" Value="01/01/1950" Pattern="(?im)[\w\d]*after[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="City" Value="Chicago" Pattern="(?im)[\w\d]*city[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="State" Value="IL" Pattern="(?im)[\w\d]*state[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="County" Value="MIDDX" Pattern="(?im)[\w\d]*county[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Postal Code" Value="60612" Pattern="(?im)[\w\d]*postal[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Telephone" Value="5234534558" Pattern="(?im)[\w\d]*tel[\w\d]*" Match="RegEx" MatchTarget="1" Type="tel" Force="false" Ordinal="0" />
+      <FormValue Name="SSN" Value="987-65-4320" Pattern="(?im)[\w\d]*ssn[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="IP" Value="208.100.0.117" Pattern="(?im)[\w\d]*ip[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="URL" Value="http://www.example.com" Pattern="(?im)[\w\d]*url|website|site|domain|web|uri|link[\w\d]*" Match="RegEx" MatchTarget="1" Type="url" Force="false" Ordinal="0" />
+      <FormValue Name="Credit Card" Value="4916613944329494" Pattern="[\w\d]*cc|credit_?card|card[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="CVV2" Value="586" Pattern="[\w\d]*cvv[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Time" Value="00:00:00" Match="RegEx" MatchTarget="1" Type="time" Force="false" Ordinal="0" />
+      <FormValue Name="Datetime" Value="2011-01-01T00:00:00Z" Match="RegEx" MatchTarget="1" Type="datetime" Force="false" Ordinal="0" />
+      <FormValue Name="Local Datetime" Value="2011-01-01T00:00:00" Match="RegEx" MatchTarget="1" Type="datetime-local" Force="false" Ordinal="0" />
+      <FormValue Name="Month" Value="2011-01" Match="RegEx" MatchTarget="1" Type="month" Force="false" Ordinal="0" />
+      <FormValue Name="Week" Value="2011-W01" Match="RegEx" MatchTarget="1" Type="week" Force="false" Ordinal="0" />
+      <FormValue Name="Color" Value="#ffffff" Match="RegEx" MatchTarget="1" Type="color" Force="false" Ordinal="0" />
+      <FormValue Name="TCKN" Value="10000000146" Pattern="tc[kn]?" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="#DEFAULT#" Value="3" Pattern="" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+    </FormValues>
+    <AutoCompleteEnabledTextInputValues>
+      <InputValue Value="CC" />
+      <InputValue Value="*credit*" />
+      <InputValue Value="*login*" />
+      <InputValue Value="*logon*" />
+      <InputValue Value="*sign*" />
+      <InputValue Value="*CVV*" />
+      <InputValue Value="*pass*" />
+      <InputValue Value="*user*" />
+      <InputValue Value="*account*" />
+      <InputValue Value="pwd" />
+    </AutoCompleteEnabledTextInputValues>
+    <SensitiveKeywords>
+      <SensitiveKeyword Pattern="\b(?&gt;admin(?:istrator)?)\b" />
+      <SensitiveKeyword Pattern="\b(?&gt;pass(?:w(?:or)?d)?)\b" />
+      <SensitiveKeyword Pattern="\b(?&gt;user(?:name)?)\b" />
+      <SensitiveKeyword Pattern="\b(?:login)\b" />
+      <SensitiveKeyword Pattern="\b(?:secret)\b" />
+      <SensitiveKeyword Pattern="\b(?:private)\b" />
+      <SensitiveKeyword Pattern="\b(?:secure)\b" />
+      <SensitiveKeyword Pattern="\b(?:protected)\b" />
+      <SensitiveKeyword Pattern="\b(?:backup)\b" />
+      <SensitiveKeyword Pattern="\b(?:webadmin)\b" />
+      <SensitiveKeyword Pattern="\b(?:manager?)\b" />
+      <SensitiveKeyword Pattern="\b(?:upload)\b" />
+      <SensitiveKeyword Pattern="\b(?:file(?:admin|manager))\b" />
+      <SensitiveKeyword Pattern="\b(?:account)\b" />
+      <SensitiveKeyword Pattern="\b(?:uid)\b" />
+      <SensitiveKeyword Pattern="\b(?:uname)\b" />
+      <SensitiveKeyword Pattern="\b(?:usr)\b" />
+      <SensitiveKeyword Pattern="\b(?:pwd)\b" />
+      <SensitiveKeyword Pattern="\b(?:todo)\b" />
+      <SensitiveKeyword Pattern="\b(?:hack)\b" />
+      <SensitiveKeyword Pattern="\b(?:xxx)\b" />
+      <SensitiveKeyword Pattern="\b(?:fix(?:me)?)\b" />
+      <SensitiveKeyword Pattern="\b(?:credentials?)\b" />
+      <SensitiveKeyword Pattern="\b(?:debug)\b" />
+      <SensitiveKeyword Pattern="\b(?:root)\b" />
+      <SensitiveKeyword Pattern="\b(?:bug)\b" />
+      <SensitiveKeyword Pattern="\b(?:problem)\b" />
+      <SensitiveKeyword Pattern="\b(?:bad)\b" />
+      <SensitiveKeyword Pattern="\b(?:hope)\b" />
+      <SensitiveKeyword Pattern="\b(?:overflow)\b" />
+      <SensitiveKeyword Pattern="\b(?:crash)\b" />
+      <SensitiveKeyword Pattern="\b(?:inject)\b" />
+      <SensitiveKeyword Pattern="\b(?:xss)\b" />
+      <SensitiveKeyword Pattern="\b(?:trust)\b" />
+    </SensitiveKeywords>
+    <IgnoreParameters>
+      <IgnoreParameter Name="ASP.NET VIEWSTATE" Pattern="__VIEWSTATE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GET" Pattern="__VIEWSTATE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __EVENTVALIDATION" Pattern="__EVENTVALIDATION" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTVALIDATION GET" Pattern="__EVENTVALIDATION" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST" Pattern="__ASYNCPOST" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTTARGET" Pattern="__EVENTTARGET" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTTARGET GET" Pattern="__EVENTTARGET" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __EVENTARGUMENT" Pattern="__EVENTARGUMENT" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTARGUMENT GET" Pattern="__EVENTARGUMENT" Type="GET" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE ENC GET" Pattern="__VIEWSTATEENCRYPTED" Type="GET" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE ENC POST" Pattern="__VIEWSTATEENCRYPTED" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GENERATOR" Pattern="__VIEWSTATEGENERATOR" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GENERATOR GET" Pattern="__VIEWSTATEGENERATOR" Type="GET" />
+      <IgnoreParameter Name="ASP.NET COMPRESSED VIEWSTATE" Pattern="__COMPRESSEDVIEWSTATE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET COMPRESSED VIEWSTATE GET" Pattern="__COMPRESSEDVIEWSTATE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONX" Pattern="__SCROLLPOSITIONX" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONX GET" Pattern="__SCROLLPOSITIONX" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONY" Pattern="__SCROLLPOSITIONY" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONY GET" Pattern="__SCROLLPOSITIONY" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __LASTFOCUS" Pattern="__LASTFOCUS" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __LASTFOCUS GET" Pattern="__LASTFOCUS" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __PREVIOUSPAGE" Pattern="__PREVIOUSPAGE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __PREVIOUSPAGE GET" Pattern="__PREVIOUSPAGE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST" Pattern="__ASYNCPOST" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST GET" Pattern="__ASYNCPOST" Type="GET" />
+      <IgnoreParameter Name="Java Faces ViewState" Pattern="_javax.faces.ViewState" Type="POST" />
+      <IgnoreParameter Name="Java Faces ViewState GET" Pattern="_javax.faces.ViewState" Type="GET" />
+      <IgnoreParameter Name="Struts CSRF Nonce" Pattern="org.apache.struts.taglib.html.TOKEN" Type="POST" />
+      <IgnoreParameter Name="Struts CSRF Nonce GET" Pattern="org.apache.struts.taglib.html.TOKEN" Type="GET" />
+      <IgnoreParameter Name="JAVA Session ID" Pattern="jsessionid" Type="GET" />
+      <IgnoreParameter Name="PHP Session ID" Pattern="PHPSESSID" Type="GET" />
+    </IgnoreParameters>
+    <IgnoreContentTypes>
+      <InputValue Value="application/pdf" />
+      <InputValue Value="application/x-7z-compressed" />
+      <InputValue Value="application/x-bzip2" />
+      <InputValue Value="application/x-compress" />
+      <InputValue Value="application/x-gtar" />
+      <InputValue Value="application/x-gzip" />
+      <InputValue Value="application/x-lzip" />
+      <InputValue Value="application/x-lzma" />
+      <InputValue Value="application/x-rar-compressed" />
+      <InputValue Value="application/x-tar" />
+      <InputValue Value="application/zip" />
+      <InputValue Value="image/bmp" />
+      <InputValue Value="image/jpeg" />
+      <InputValue Value="image/png" />
+      <InputValue Value="video/mpeg" />
+    </IgnoreContentTypes>
+    <SecurityProtocol>Ssl3 Tls Tls11 Tls12</SecurityProtocol>
+    <IgnoredEmailPatterns>
+      <EmailPattern Value="*@example.com" />
+      <EmailPattern Value="*@*.example.com" />
+    </IgnoredEmailPatterns>
+  </Settings>
+  <OptimizerOptions />
+</ScanPolicy>

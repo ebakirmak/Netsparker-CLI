@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScanPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="f3352243-7a28-4f9f-ac9e-36f2ae69dbab" Version="13">
+  <Description>Performs SQL Injection, XSS, CSRF, SSRF, File Upload, File Inclusion and Command Injection checks.</Description>
+  <Engines>
+    <Engine Id="1bac49ec-eb28-484b-bacd-68587239d260">
+      <Settings>
+        <ScanPolicySetting Name="ProofGenerationEnabled">True</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="81798035-29a2-4f02-b654-fe24ba363086" Version="13" />
+        <Pattern Id="59a90f92-9237-464b-9694-e7bd8478f138" />
+        <Pattern Id="2c4cb9b6-7099-45f9-a82e-2a4155fc847f" />
+        <Pattern Id="d88545c4-9490-4558-b783-962d594c1ad3" />
+        <Pattern Id="715f019f-df83-4393-9eae-e797cf3fb5e7" />
+        <Pattern Id="32b34b96-69f2-4f6a-81ec-cfff67e6cdd5" />
+        <Pattern Id="76aca19a-917a-4083-b1e2-c94658e82d75" />
+        <Pattern Id="2ccf9ce3-3674-41f6-bee3-dced065334cb" />
+        <Pattern Id="468e705f-7637-487e-b0ce-87d599f5e5a1" />
+        <Pattern Id="363a0fb0-1a59-4d3a-99f1-0d864abf2f35" />
+        <Pattern Id="7a4e8c17-8ef4-4423-8b36-3a2a5e573fa2" />
+        <Pattern Id="84618a8d-87ed-4746-af0e-6fd8eb162440" />
+        <Pattern Id="aa4fe68e-398a-4205-8b70-2e90b868b780" />
+        <Pattern Id="c9d4dd77-50d9-42c9-a9bf-09c7f38ec5d7" />
+        <Pattern Id="8313bf03-ffa9-4c50-a97b-59da74123141" />
+        <Pattern Id="aa3eb22c-fd5e-4fc7-b844-f3ee1422438f" />
+        <Pattern Id="0f2cd7b3-755e-4e0f-89b6-253c6009c20b" />
+        <Pattern Id="2773eb50-3e6c-4341-8241-67f20b45db51" />
+        <Pattern Id="08cd2748-1fb2-4530-acfb-a5a32feab510" />
+        <Pattern Id="0b45acaa-384c-4f14-be96-dce217f44eb4" />
+        <Pattern Id="fee58e18-c0b8-4940-94a4-c09806ff751e" />
+        <Pattern Id="1226d97e-b014-4f9e-b390-06d76245fb42" />
+        <Pattern Id="9ac89cbc-ef2d-484c-a908-1877533c8b94" />
+        <Pattern Id="78b69070-8a9a-4b82-a59b-07e48f45f19c" />
+        <Pattern Id="af306774-1f1b-4e22-9c5a-5d261894c6f8" />
+        <Pattern Id="509d5d3e-8228-408e-a42d-4dd0d29b3a3c" />
+        <Pattern Id="731418bc-837f-4f92-ba41-9aefae6e4038" />
+        <Pattern Id="bc2bee70-194a-4ae5-aa9c-fc87a5fd533a" />
+        <Pattern Id="393c0b2e-34e8-4c75-8926-26f887d63776" />
+        <Pattern Id="d02f13df-fd7e-4c87-9bdc-48065cbcda93" />
+        <Pattern Id="218f258f-983b-4a11-91b9-d07d1a660b99" />
+        <Pattern Id="2f1b4fe1-98b3-4155-9b36-b0a364f3d1f1" />
+      </Patterns>
+    </Engine>
+    <Engine Id="8cdf52d3-1589-4464-b7bf-43fc57babad2">
+      <Settings>
+        <ScanPolicySetting Name="OnlyRunOnTheStartPath">False</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="f007c45a-23df-40a9-8050-bac73606bc48" />
+        <Pattern Id="9280ef74-420a-4bca-9b72-f4f5b4d10b70" />
+        <Pattern Id="0febd274-987e-4142-a268-c1115fa68b90" />
+        <Pattern Id="406ed33f-5441-4383-b23b-3028802889c4" />
+        <Pattern Id="8f7e6233-ad31-46bb-8cae-a8210da7e158" />
+        <Pattern Id="83be4890-b3a6-4743-838d-439bd6f05973" />
+        <Pattern Id="50c431ba-e907-4eff-816b-1b30d8da2992" />
+        <Pattern Id="074e37c2-9c2c-4d6f-b3bc-00c83735e997" />
+        <Pattern Id="e14e1110-bf7a-4389-af4d-c7ad6f82845c" />
+        <Pattern Id="b32539c6-f14a-40ee-ac78-0188406dc7a3" />
+        <Pattern Id="1ae09d58-4a2f-49e3-95bc-16fd3ca03bd4" />
+        <Pattern Id="6dfe260d-5bf2-4239-a1bc-78509b076fa2" />
+        <Pattern Id="35d28c52-175d-4db4-b577-8506feecfd37" />
+        <Pattern Id="d8cdd737-b4b1-473b-b688-179473b506dd" />
+        <Pattern Id="4e1a89b0-7745-445f-9f6a-68b7d9225af2" />
+        <Pattern Id="6a8e0bba-21e6-4e03-a082-26b397259f22" />
+        <Pattern Id="684c94f3-9b01-4aa5-bf73-df4680336477" />
+        <Pattern Id="518d53d1-a773-4e2e-8c29-5a8e3d652b73" />
+        <Pattern Id="c1057b39-c0ba-485a-be29-c71f7dc549a9" />
+        <Pattern Id="1f89019e-ce1d-4e0c-a3b8-bc23be667080" />
+        <Pattern Id="e9cd39e8-2f82-4998-81d8-15f4c2949b29" />
+        <Pattern Id="b8ede34a-ab36-45ee-a6db-4b17f256f7b2" />
+        <Pattern Id="4a7d3f92-f7b1-43d4-b792-87b904dd8a03" />
+        <Pattern Id="933bf373-a608-48eb-af15-e00a002ddc63" />
+        <Pattern Id="f496ea2a-2af0-453c-a4eb-9e7a9ec1d2ce" />
+        <Pattern Id="101d8d0c-833d-4892-a9d9-b9331712b6c5" />
+        <Pattern Id="a988f8cd-c396-4236-b96a-05c50fd29de9" />
+        <Pattern Id="051bfb4d-e5c3-487b-9b60-b32afa48e91f" />
+        <Pattern Id="15b81ca1-94b8-4a73-aef7-68f59bf407de" />
+        <Pattern Id="8829c841-872c-42e1-856c-08321d1a70c2" />
+        <Pattern Id="05282262-d9ee-4728-92f8-92bd48f58d4f" />
+        <Pattern Id="5f187741-ad62-4fbd-adb8-a7ef9dd3adde" />
+        <Pattern Id="a99bac7b-c141-4717-a254-d692eacde77b" />
+        <Pattern Id="107a183b-6393-429f-8a54-31bf25f287ba" />
+        <Pattern Id="bed55db4-086d-454c-b08f-7d1b7ec14e55" />
+        <Pattern Id="ca009e99-2692-48c7-a3a8-29bc391de7e2" />
+        <Pattern Id="7fe63207-0e51-4108-9b2f-45dcb41fab00" />
+        <Pattern Id="6e71df0b-e0b1-4455-95e7-43ad1b072496" />
+        <Pattern Id="81fe8e12-71a8-43da-a089-74a3cd621e07" />
+        <Pattern Id="ac3ab342-a830-4ab6-9a71-89626ba96aa4" />
+        <Pattern Id="89bcfea9-59c0-418a-8d26-d16a4493bd4e" />
+        <Pattern Id="afac089a-3a90-48ef-b773-915956d49b07" />
+        <Pattern Id="ec52139b-aca2-45a1-a2eb-b4454d68ef81" />
+        <Pattern Id="7a953413-b1c8-4aa4-a3ec-b3f58fa0f701" />
+      </Patterns>
+    </Engine>
+    <Engine Id="7ef784c4-82b1-43fe-bdf8-bb812a55e0ea">
+      <Settings>
+        <ScanPolicySetting Name="ProofGenerationEnabled">True</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="d96f79f0-a4b2-4372-9c05-3469a571716e" Version="10" />
+        <Pattern Id="a581b900-7bc0-4f37-b992-66365d268520" />
+        <Pattern Id="5d89d216-1a45-48b2-8013-fa05b3e6a344" />
+        <Pattern Id="c5c49abc-7f79-44d7-8c89-955cd2040bd5" />
+        <Pattern Id="e8a88290-d36a-44c8-b772-f1c498305c06" />
+        <Pattern Id="a0ef0e32-69b7-414d-a3ab-366e42e9f7a9" />
+        <Pattern Id="fa0ed54b-743a-44a1-8831-fab1a415811c" />
+        <Pattern Id="ca240c18-7640-4038-b689-743938b45c39" />
+        <Pattern Id="45bd17ae-64d7-4854-ac61-37afa043e047" />
+        <Pattern Id="89d7c0aa-5594-40e8-a002-e64c1c588b6b" />
+        <Pattern Id="f1459477-6387-40ce-b117-7f8f6e6e5ffc" />
+        <Pattern Id="817c92ba-e074-4f62-a00e-04997d2bc6e9" />
+        <Pattern Id="b06ddc93-1e84-4455-8f53-bc05e21c47f1" />
+        <Pattern Id="ef822fe5-0d2b-469b-afb2-15092524a669" />
+        <Pattern Id="4370965f-39d4-423d-8c7a-f278a93be01a" />
+        <Pattern Id="e5b8a46e-893c-4d9d-bcb3-b0289f11ccf6" />
+        <Pattern Id="65440a54-ca6c-47f7-a748-4ccd012c9f47" />
+        <Pattern Id="716a1bc5-5b00-4b89-9c52-c42ef1b72e71" />
+        <Pattern Id="766e5fb6-3765-4a6b-a68a-3181ae39d67e" />
+        <Pattern Id="540af16a-f81a-4003-8cb3-46ae27e64f04" />
+        <Pattern Id="5c7277ad-403f-432b-9ef8-76f88b82fb60" />
+        <Pattern Id="b67af345-45d7-4bd1-b1db-84b9ebb1d2ca" />
+        <Pattern Id="52d25f18-c6ba-4a18-9580-251d641a5d9a" />
+        <Pattern Id="358c3b80-d6ec-4d32-adf8-462bf7969d97" />
+      </Patterns>
+    </Engine>
+    <Engine Id="8a7d3010-3620-4f1b-9643-0daebf88efad">
+      <Settings />
+      <Patterns>
+        <Pattern Id="3bf7344d-ed81-4083-8654-30751fef443a" />
+        <Pattern Id="63384a3a-f901-4088-a21f-a4e4e9e3f266" />
+        <Pattern Id="7d5bc102-dcad-4985-ab26-caa3595a5e34" />
+        <Pattern Id="f5a4bc20-cb19-4f52-85f9-26b33f568777" />
+        <Pattern Id="08bd2da4-0a5f-4756-9b85-a2118fba3fcb" />
+        <Pattern Id="80ccc8ab-6f47-49f4-b225-be49a11cdf4e" />
+        <Pattern Id="65903f56-8eeb-43ee-bc95-84f7a65d19d8" />
+        <Pattern Id="97bcdd2a-ca74-46d8-afd1-99b639d6fd66" />
+        <Pattern Id="28625671-efef-4f2f-8f01-f41d72296c96" />
+        <Pattern Id="4d3d959d-b996-47ae-8da4-5dfd9740c37e" />
+        <Pattern Id="62ecdd40-d8d9-40ba-b232-4fc60d01829e" />
+        <Pattern Id="be5eb078-2c26-4821-a40f-ecd1045d7443" />
+        <Pattern Id="c1296ca3-fb2d-4d7e-b7e6-c6e475958cd3" />
+        <Pattern Id="36f13112-e857-41f6-886b-3b46e06de5aa" />
+        <Pattern Id="04a5cfc4-4634-45d2-a5b9-e3575aab5645" />
+        <Pattern Id="07922b5e-5257-4449-b5c6-49fd77066684" />
+        <Pattern Id="fc015ffc-690d-4922-b747-723dfcf4008b" />
+        <Pattern Id="2a3a5074-3ea2-4e53-8344-6f708a811df0" />
+        <Pattern Id="fa6e1a42-d0c1-41a9-999a-835e9d5be7d5" />
+        <Pattern Id="c4b3b828-77eb-443d-a599-eb7edb30e5de" />
+      </Patterns>
+    </Engine>
+    <Engine Id="fcfcac82-00b6-484d-b6ab-09c06cefb7f5">
+      <Settings>
+        <ScanPolicySetting Name="PrependParameter">False</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="5633a9bc-892b-4dd6-a0a4-b129bf6e4d12" />
+        <Pattern Id="79f7ec72-2277-4892-98cb-230bf4fec922" />
+        <Pattern Id="b9743349-a94b-4c69-9cb9-cb2dcb468e7f" />
+        <Pattern Id="c9e72247-24fd-4424-a1d0-1582935a7f3a" />
+        <Pattern Id="fedf491b-4467-485f-8e4e-1907434b713f" />
+        <Pattern Id="9bdac41f-1bc5-41b1-a663-1071e5fa8582" />
+        <Pattern Id="6c39d54b-0167-444b-9ddd-151bb2ae9fa7" />
+        <Pattern Id="8aab882a-5ee4-496b-afa0-dbef9a04ee49" />
+        <Pattern Id="9052327a-3a4d-439b-aa45-66160f9def11" />
+        <Pattern Id="1a6dfcfc-a461-4ca4-ab02-a3eb7b357743" />
+        <Pattern Id="e5373591-d714-4eec-85fd-d2c1d2025b21" />
+        <Pattern Id="c9c8831f-4ac3-4596-9173-e08df6b81321" Version="5" />
+        <Pattern Id="3864a69d-5d03-4a99-b007-56b8a1aac392" />
+        <Pattern Id="e35f6c59-83f1-4a3c-a01a-ab525b85e4d3" />
+        <Pattern Id="1b78b733-d153-4824-802b-008180639da4" />
+        <Pattern Id="e50c7a43-e52d-439c-b66e-972ca03fa855" />
+        <Pattern Id="e37cc9d3-ae32-4d64-b894-16f88e404640" />
+        <Pattern Id="31f002d2-19b9-4bc7-abc1-704b99f564ab" />
+        <Pattern Id="abd76018-d7a1-48e8-9335-7b0264eebaff" />
+        <Pattern Id="7f7c50d1-3dbb-4705-aa66-9b7f89ebded7" />
+        <Pattern Id="4258ed3f-7607-4098-a0d0-5ab2c6d5b88b" />
+        <Pattern Id="b2ab64e4-cdb9-4734-a795-f580acba6aa4" />
+        <Pattern Id="3508f491-b550-4656-9e5e-17ca6f0521e4" />
+        <Pattern Id="bbe4ae10-a163-43f3-adf6-779fe295527a" />
+        <Pattern Id="315b771e-7453-441d-8e20-00f4d6565266" />
+        <Pattern Id="3c3471cd-980f-4fd7-9252-2663ded6a037" />
+        <Pattern Id="008bddf3-ac1d-4a8b-a839-8327bf9aab26" />
+        <Pattern Id="701c3623-76b6-4b88-9ca6-aff5c32ffbab" />
+        <Pattern Id="8d93eaa1-0aa4-4790-a9a6-8263c8041ab5" />
+        <Pattern Id="031aa912-225f-45df-8cc8-a4a1246a0eea" />
+        <Pattern Id="46bc9c58-8963-44bd-a77d-a591fcefc037" />
+        <Pattern Id="6de793b6-0215-403a-a796-015dbf78d5ea" />
+        <Pattern Id="60162741-65ba-494d-ac5f-296fa8ef5a20" />
+        <Pattern Id="2202ea49-ba0f-4302-963e-8a355d6e5248" />
+        <Pattern Id="76d4b73e-fda1-480d-bb48-88c7f144dcbe" />
+        <Pattern Id="6684ae72-1227-4fd7-af71-3ed669009094" />
+        <Pattern Id="83f18c93-f50a-4124-a6be-659e07bc5ea7" Version="13" />
+        <Pattern Id="a1d58c09-00ef-45a5-a89e-5b6cbdbbe2f5" />
+        <Pattern Id="6a1190dc-ea8b-4035-a02a-c452c7360bfe" />
+        <Pattern Id="3b581a00-35c5-4414-8b0a-668d18c6487c" />
+        <Pattern Id="90703800-ed28-4bab-9ab2-156a36021e08" />
+        <Pattern Id="1024621f-c5d1-42be-8f17-a05c8f8710c7" />
+        <Pattern Id="9b87ee16-9275-46f4-8bed-f9fd1de265cc" />
+        <Pattern Id="36bc9c58-8963-44bd-a77d-a591fcefc036" />
+        <Pattern Id="dfd610ba-63cb-44ca-977c-9f27bab8f71f" />
+        <Pattern Id="d61d69a4-ccd7-488a-8ea5-eef710738fde" />
+        <Pattern Id="e9eafd97-2f34-4b7c-9121-031d1f20c63a" />
+        <Pattern Id="b7f7069f-9fe5-4ab0-bcaa-a50c04cb0bca" />
+        <Pattern Id="cfb3b87d-94c8-4016-a255-9ce89b77a2ca" />
+        <Pattern Id="25c60701-f934-44aa-a80e-5f03ac9f7ccf" />
+        <Pattern Id="28cc7344-0a04-47aa-9b2c-ccf29ac9df09" />
+      </Patterns>
+    </Engine>
+    <Engine Id="c49e3cab-9f7c-4aff-a16c-4d42d440252e">
+      <Settings />
+      <Patterns>
+        <Pattern Id="8a7a7da7-dd66-4d0a-bdaa-9a967abd4751" />
+        <Pattern Id="09e5d716-1753-414f-8c42-6dcf15735b29" />
+        <Pattern Id="d5a0ae5d-505a-44b3-8511-873bf8c46348" />
+        <Pattern Id="eaf252b9-efe7-42fd-8837-874fa4f32953" />
+        <Pattern Id="8a45be2c-e3f3-48f9-bc55-fb8cf50a2f52" />
+        <Pattern Id="14c84e68-840c-4807-976e-afc9c2ab7bf9" />
+      </Patterns>
+    </Engine>
+    <Engine Id="cc8af666-8360-4eef-b177-145f76716fa0">
+      <Settings />
+      <Patterns>
+        <Pattern Id="70fd2bfc-2a25-4e25-812a-e8c6f3c1c2e5" />
+        <Pattern Id="a27d660e-4afd-410d-a22b-5a53d3e3da0a" />
+        <Pattern Id="9d2c3af3-8e87-4f71-bbbe-bc1d58998e63" />
+        <Pattern Id="453d03f1-fdbb-44b1-ad58-66b8ee87bda0" />
+        <Pattern Id="026f887a-d904-4a2a-bd78-4571cd1d5288" />
+        <Pattern Id="5459ea2c-19cc-400c-9043-3e1abcaa9b09" />
+        <Pattern Id="e96ffce6-5cc3-4b79-8271-4f6861f19969" />
+        <Pattern Id="9dbb34dd-a71b-4a25-872f-8d1294f70962" />
+        <Pattern Id="e1f70211-bad1-497c-ac98-48e4f93364d4" />
+        <Pattern Id="4cc82d43-49ec-4f67-9768-72b8cfae6a53" />
+        <Pattern Id="9ffbe794-bcae-42a9-89de-a2d91e5fd124" />
+        <Pattern Id="15314fbb-234b-4623-8de0-704823c61aef" />
+        <Pattern Id="2c83e255-52de-48ab-a7ac-3129a06af750" />
+        <Pattern Id="32673cec-7680-440d-bd70-8748bba810b7" />
+        <Pattern Id="133e77fc-e64f-4e46-a5a6-9119f95f893d" />
+        <Pattern Id="4971606e-2fd9-4738-a370-35576141434d" />
+        <Pattern Id="8c853231-9117-48ee-a61d-26a3a8f41a1f" />
+        <Pattern Id="ab175551-8d96-4e5b-a237-84513502ce50" />
+        <Pattern Id="43c19536-8278-449d-98d6-f83d855f9173" Version="10" />
+        <Pattern Id="c3ce01e9-f59a-4b19-a4ab-c262e19001da" />
+        <Pattern Id="639ef011-c21e-4a9a-9612-6c63d3514d8e" />
+        <Pattern Id="b3f4df3c-9482-4e28-865e-24639de35d97" />
+        <Pattern Id="5647c0f9-5819-4783-a6db-2cf71b0a5182" />
+        <Pattern Id="6be06de5-f6cc-4d98-befc-6ae19806f798" />
+      </Patterns>
+    </Engine>
+    <Engine Id="9fd1b44a-a60a-46f2-bf2d-1c663c8df96f">
+      <Settings />
+      <Patterns />
+    </Engine>
+    <Engine Id="dfb9a9b7-929a-42fd-843a-0a79075bff5a" Version="2">
+      <Settings>
+        <ScanPolicySetting Name="CheckAllPages">True</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="3844b4cf-710f-4910-876a-5b36f6f7fc28" Version="13" />
+      </Patterns>
+    </Engine>
+    <Engine Id="c6a62b62-ad37-4020-8fd8-ce2d577bd8e3">
+      <Settings />
+      <Patterns />
+    </Engine>
+    <Engine Id="175d5167-3598-4813-8e26-14519927b8b5">
+      <Settings />
+      <Patterns>
+        <Pattern Id="3465edc6-a9d7-4b70-ad22-39190db02d1b" />
+        <Pattern Id="c0c81d87-4610-4aa9-b948-1758aa91f336" Version="10" />
+        <Pattern Id="46b935a0-2d0f-4a57-b50c-ea9a834e23ca" Version="10" />
+        <Pattern Id="b7480db0-b5f8-4ce7-9468-47ddc687152d" Version="5" />
+        <Pattern Id="983c9158-9e82-419c-8f91-0300fb98fd7e" Version="5" />
+        <Pattern Id="86ec91aa-f9e1-4daf-af1c-ad753636f540" Version="5" />
+        <Pattern Id="7f85ad9f-d867-4ef5-a25e-dd997713abb9" Version="10" />
+        <Pattern Id="0e2edff4-08ee-4e06-9d4f-6e308a8dbe4c" Version="2" />
+        <Pattern Id="ad5a9f17-43dc-4c53-943e-427986088890" Version="7" />
+        <Pattern Id="0461eba7-799d-448e-9e75-f0c1692e361d" />
+        <Pattern Id="a9dbc8e2-a4fd-463f-a109-5c2c1334e8c2" />
+        <Pattern Id="33cd795b-338f-44ab-98ba-3066e035c2ba" />
+        <Pattern Id="b8c1b3ee-4e18-4e0f-b99a-67ee3626798a" />
+        <Pattern Id="7debc750-8a83-4d50-a682-d7a39ba0fe94" />
+        <Pattern Id="a7524e66-2f9b-4732-8181-d4b9499a4d28" />
+        <Pattern Id="d1c1851e-3a09-4ff2-a14b-02380c7a4dd3" />
+        <Pattern Id="eac021bb-7b3d-4254-8386-3b62fb7c70e9" />
+      </Patterns>
+    </Engine>
+    <Engine Id="9c48c69a-0110-461b-9353-151e01893f81">
+      <Settings />
+      <Patterns>
+        <Pattern Id="e1060b59-1869-422a-aff9-f1d2e4bc071f" />
+        <Pattern Id="b25b968f-cd71-4717-a259-7147320fda72" />
+        <Pattern Id="1c2845c9-67bd-4ee0-ae38-44a9d78d80da" />
+        <Pattern Id="5bcf34df-67b3-4699-ac4d-7c009aafd203" />
+        <Pattern Id="0672d1d6-0225-44df-a5b2-c6c404baf525" />
+        <Pattern Id="fb102bec-5b37-4157-8fb1-472b8a82f715" />
+        <Pattern Id="199ddc4d-c568-41ea-9165-81b58904567b" />
+        <Pattern Id="aaec68da-3932-4fc5-8544-cbc5f299752b" />
+        <Pattern Id="e1aeac78-dd17-4e98-9e24-fede9130e9da" />
+        <Pattern Id="0fd2f199-d693-4e9f-95b2-5607cf084c0a" />
+        <Pattern Id="be24784d-d410-44e2-8d0c-3c0597749312" />
+      </Patterns>
+    </Engine>
+    <Engine Id="c3c7eb28-c736-4499-8779-52456a5ce735">
+      <Settings />
+      <Patterns>
+        <Pattern Id="f014feaa-fd46-4b1b-a7b7-f8c3e3c74d5c" />
+        <Pattern Id="022795b9-0039-4ec9-ab22-fae0c1504267" />
+        <Pattern Id="9eba36c0-698a-438f-b3cb-40f7a656d1e8" />
+        <Pattern Id="05717dbd-59d9-42df-a671-b581b6c9278d" />
+        <Pattern Id="20bf8ac3-0f3e-4929-811d-b8c01c61fa69" />
+        <Pattern Id="9e82a5b4-6e08-4da5-b912-460553313382" />
+      </Patterns>
+    </Engine>
+    <Engine Id="5faed4fa-f992-4811-9574-32d781cffd6b">
+      <Settings />
+      <Patterns>
+        <Pattern Id="cba56663-81da-4a39-9cb0-567a1d5e3656" />
+        <Pattern Id="bdfc3421-d6fb-492b-8421-9e5276b65a81" />
+        <Pattern Id="15d24b44-07cd-456d-9900-57d6aa971037" />
+        <Pattern Id="3cb6a0f0-4f83-435d-a005-a24560888e1e" />
+        <Pattern Id="b56b74b8-6fd9-4779-a6ab-d4f8a5db2e60" />
+        <Pattern Id="a8f118c8-e059-4c34-8320-94ea52112a9e" />
+        <Pattern Id="2a8aa329-7cc7-442e-9220-e098a119b1d3" />
+        <Pattern Id="1fe54c56-2441-4975-a70f-c508418443fd" />
+        <Pattern Id="232c3f7b-ca9c-4d24-8af2-e7b852513873" />
+        <Pattern Id="d0243715-082e-4941-a75e-2857b0924c3b" />
+        <Pattern Id="61b54374-a9d6-41e9-b637-710f57a93bc1" />
+        <Pattern Id="9b022ee2-b324-4119-b611-c88ec6bd3bc2" />
+        <Pattern Id="12727167-7b2b-40b1-bc27-a309d4adbb67" />
+        <Pattern Id="c212801e-ee0b-45a2-8a3a-653ee4ccd69c" />
+        <Pattern Id="b59055a0-08b4-49bb-984c-7a4c8944b09a" />
+        <Pattern Id="62584785-abe8-4263-9dc7-a6c567067d58" />
+        <Pattern Id="00a68b69-5e21-42c2-b8c9-6b58ed6fa501" />
+        <Pattern Id="9507a84f-3348-4502-8e6b-a5795bacb851" />
+        <Pattern Id="2b69377c-3e1d-4729-9228-ac8da6de2552" />
+        <Pattern Id="928cdec6-b568-45f9-8057-4cea71d1aaed" />
+        <Pattern Id="a05e0f44-70f5-4a59-be9d-b35d00e5ef54" />
+        <Pattern Id="08ff7858-0e4e-447d-9602-2eef954967df" />
+        <Pattern Id="047bfaf9-bb5d-4ae4-8285-0ecf00e0ba85" />
+        <Pattern Id="7c851a65-0139-4aff-9d6e-ffde6a47b4a3" />
+        <Pattern Id="328401d7-4715-4569-9ece-34bbc271b691" />
+        <Pattern Id="6115e454-11d0-4d3b-b2e7-af393ac12e35" />
+        <Pattern Id="addb319e-328e-4285-9a84-9439bb6a3c2d" />
+        <Pattern Id="b016d14c-77d3-49c5-9eb2-8dccd9f4a01b" />
+        <Pattern Id="20f8737e-1e6f-44ef-9c6f-9818646c0cb2" />
+        <Pattern Id="d3928bea-44ee-4abe-af77-6f5b59f01392" />
+        <Pattern Id="b1d9ad5b-3f54-42b3-8c52-10a91594e0c4" />
+        <Pattern Id="450e823a-5fe1-4b3c-88d9-5768289be715" />
+        <Pattern Id="4c11200c-d9e6-42c6-8073-dbacb0915c77" />
+        <Pattern Id="b04e462d-385f-4d0f-b44f-a084672cd34d" />
+        <Pattern Id="e48f94e5-7cb7-46d9-8fe9-e4542ca29e10" />
+        <Pattern Id="624764b1-068b-4ffb-917d-e133a6e464b5" />
+        <Pattern Id="d6276025-b390-4b95-9574-4fc1e4f2370b" />
+        <Pattern Id="d398d0f6-d8fc-452b-9fc5-d16d21111a01" />
+        <Pattern Id="3c14809c-a3ef-4995-a986-e033423b140c" />
+        <Pattern Id="fabdb9ba-bd90-4dec-af9a-a79885e49b35" />
+        <Pattern Id="3f7df232-f8db-4bd2-a72e-ba3bc89bbdaa" />
+      </Patterns>
+    </Engine>
+    <Engine Id="0f769194-3925-445d-9198-1e6daef1dd89">
+      <Settings>
+        <ScanPolicySetting Name="ProofGenerationEnabled">False</ScanPolicySetting>
+        <ScanPolicySetting Name="ProofSharingEnabled">True</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="4053039d-b257-4a05-a322-9dc3beccfd01" />
+        <Pattern Id="bdf0d6fd-8d16-4de6-9228-ac47cae6a16d" />
+        <Pattern Id="52c99165-e822-4cfe-9cfd-826e12cbb13a" />
+        <Pattern Id="67dc1761-8916-4349-9f66-c0187967f9c4" />
+        <Pattern Id="13c1e739-fcf0-4c84-99b7-caf07d722921" />
+        <Pattern Id="d34ff049-7692-4bbd-a020-5d1a231900ca" />
+        <Pattern Id="96a58ec3-f93f-4a81-833d-c98901fabc9d" />
+        <Pattern Id="37a622ec-0b14-4b68-b2b3-c2ba5f21b4c6" />
+        <Pattern Id="c5ceb1f8-b2f4-4735-9bf3-2e084b92c58d" />
+        <Pattern Id="baefc111-d1ee-4b3f-9a0b-4d608f3d2e7d" />
+        <Pattern Id="0fbf0ba6-511a-47d7-91ff-592a97967513" />
+        <Pattern Id="d7b8d4c9-0302-44dd-8b94-dd91e4379564" />
+        <Pattern Id="5a2d8c08-3d01-4e41-9718-19cd9c24edf5" />
+        <Pattern Id="0686fdfb-c303-49e4-96c8-4bb4fa2c9f34" />
+        <Pattern Id="34afd6e7-c0cd-444d-9315-069a28813f8a" />
+        <Pattern Id="7c4136f1-a1e0-4ece-9e64-fa80e0212898" />
+        <Pattern Id="d6453ea8-6bab-4517-bdf3-53433d3193a4" />
+        <Pattern Id="b05d0ee3-47e4-49e1-960b-4bca7ead6c23" />
+        <Pattern Id="63d007f5-f4a4-414f-8ba9-d314be673165" />
+        <Pattern Id="a0096503-e12e-4c02-88df-3083d7f8480c" />
+        <Pattern Id="29e44f08-6d3e-4c9d-a228-a0950380dfc2" />
+        <Pattern Id="62b00369-09c5-4be9-9eb9-4552205fd541" />
+        <Pattern Id="0cd0acce-ec8d-4a4f-9408-7010757f83aa" />
+        <Pattern Id="1be823af-95c2-43c4-901b-4d55ed643d4c" />
+        <Pattern Id="c9477583-afaa-4c7e-a15a-d41c5e535794" />
+        <Pattern Id="4fb5b97c-a3d5-4a37-98f7-c89ebb30b1cb" />
+        <Pattern Id="f1a06351-9f0b-47e9-9992-12f126d96e92" />
+        <Pattern Id="601b738a-9c08-4e51-8e96-4d85bc968e76" />
+        <Pattern Id="7ce757e4-665c-4d07-9948-2918cb42a964" />
+        <Pattern Id="490d36f8-8109-466c-a406-e81f76b8175c" />
+        <Pattern Id="b9f9db84-7d98-46f1-b44d-f7c57b495f6e" />
+        <Pattern Id="9b617e1b-31c2-4b14-ba19-42260f996148" />
+        <Pattern Id="53360799-53ba-4dd1-bda2-9d887677ae4a" />
+        <Pattern Id="7a848a19-8345-495b-93bf-3ce7e2c2abff" />
+        <Pattern Id="692875b1-780c-4258-abcc-b91ba56fc06c" />
+        <Pattern Id="767e46fc-c2c2-428c-ba60-f5e558bf1701" />
+        <Pattern Id="2c6d3785-f147-4201-9383-78367eb48128" />
+        <Pattern Id="13d1bdb8-ffaf-4679-a0f2-1334afb8af43" />
+        <Pattern Id="658f5663-fb5b-4ea8-b055-8bd1c57bc9ad" />
+        <Pattern Id="914590f6-0163-4cc7-ad39-dd1f8cd305c2" />
+        <Pattern Id="01c68992-0098-4ec9-a4f8-e808a9a44f07" />
+        <Pattern Id="776fde66-768e-4328-8bb9-e75df7b03945" />
+        <Pattern Id="206c9a99-65b2-4d15-b3b6-44a2ee5207ce" />
+        <Pattern Id="dbdb2f63-92c1-4093-b176-03092d89bcb5" />
+        <Pattern Id="e78923e4-cbaa-4096-b440-f2ca26b50d05" />
+        <Pattern Id="cf64344c-2b66-46d3-8ed8-56da7ae6c0a0" />
+        <Pattern Id="dc2252fa-b723-4503-a1c5-ad0bd718125e" />
+        <Pattern Id="b3962544-a323-46db-861b-a4ac3ebd65df" />
+        <Pattern Id="f157e684-6793-4f55-a58a-7c07761dc01b" />
+        <Pattern Id="86603034-16ef-4284-8d4c-60a02a45b477" />
+        <Pattern Id="b5ffaa69-5f0a-4a28-aa8c-04ba445abf5c" />
+        <Pattern Id="d1dddc7b-c0f7-443c-99bc-05feb2aa2be9" />
+        <Pattern Id="dc673332-548b-4df8-86c5-ba24bac4f225" />
+        <Pattern Id="641d8b07-7e90-4dbc-8480-a3429abff9f8" />
+        <Pattern Id="92c87c6e-c47c-4226-b005-c5cb7b0e76e9" />
+        <Pattern Id="aed8cbfb-eae3-4f33-9af4-f5c9f02f44e6" />
+      </Patterns>
+    </Engine>
+    <Engine Id="08f31830-803c-4bb5-a5e7-dc3d3062dc52">
+      <Settings>
+        <ScanPolicySetting Name="DatabaseTypes">All</ScanPolicySetting>
+        <ScanPolicySetting Name="ProofGenerationEnabled">True</ScanPolicySetting>
+        <ScanPolicySetting Name="ProofSharingEnabled">True</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="007789cf-4cf2-4042-9c1d-484ad3c7c47d" />
+      </Patterns>
+    </Engine>
+    <Engine Id="82be2dcc-c99d-43a2-88e8-e96dad7f23e3">
+      <Settings />
+      <Patterns>
+        <Pattern Id="64c3bef3-4980-475d-a6f7-a18bd5fe9a92" Version="10" />
+        <Pattern Id="ff3bb6ba-6299-41cf-a263-a4802402aa14" Version="10" />
+        <Pattern Id="b7b4b594-c713-4497-bb14-7b5ff9d1cba3" Version="10" />
+        <Pattern Id="1e66206f-b50a-44ff-af66-2ee590f164c7" Version="10" />
+        <Pattern Id="2a07161b-88d1-47af-9e88-98e6f1d2ecfc" Version="10" />
+        <Pattern Id="139e9482-7de7-4742-9391-3063a75213a7" Version="10" />
+        <Pattern Id="4998be87-cd39-4097-9ea8-6695b171f8be" Version="10" />
+        <Pattern Id="6224526e-de38-4031-acc4-8d560432cfd1" Version="10" />
+        <Pattern Id="e09efc14-d8f1-44db-a8bf-f8dc35370cf0" Version="10" />
+        <Pattern Id="84db0711-6caf-4636-9b80-0c883e6a4e9c" Version="10" />
+        <Pattern Id="5a7001aa-8e76-40be-aee4-aaa6bdc260df" Version="10" />
+        <Pattern Id="c91a202f-5825-4fa1-a451-ed8d60a3651f" Version="10" />
+        <Pattern Id="a33c90a6-d1dd-432e-ae59-17cbce784f70" Version="10" />
+        <Pattern Id="66c1b235-51a5-4f88-b617-cdb8b214bb31" Version="10" />
+        <Pattern Id="c936f2bc-a3ce-498f-93f9-0acc90e27962" />
+        <Pattern Id="ea3aa34b-e788-4fe5-81e6-32f06179afa7" Version="10" />
+        <Pattern Id="3af0a9a4-de1a-42ab-92e8-aefa8e3aaae8" Version="10" />
+        <Pattern Id="def53143-b959-4ae7-ab26-bb74f521fdb0" />
+        <Pattern Id="8c692c9b-3ae4-4135-88a1-c9ce4b12cc88" Version="10" />
+        <Pattern Id="b09d1cf5-3b31-4618-ae03-8583566e68b4" Version="10" />
+        <Pattern Id="6a697017-9f74-462f-892c-1019a75c0d12" />
+        <Pattern Id="50d75cb2-7180-42d5-a0e2-29403e77248d" Version="10" />
+        <Pattern Id="32435183-0409-4fcf-91c8-39b4ef089014" Version="10" />
+        <Pattern Id="5e7d232a-8b9a-41c4-90a6-07d2f27e4e29" Version="10" />
+        <Pattern Id="3e78322f-17ad-4109-8f02-043f6ec14656" Version="10" />
+        <Pattern Id="13793722-adc2-4844-928e-c1e357164a05" Version="10" />
+        <Pattern Id="dbd9858d-9513-4a7b-a7e0-1faeb1d17d67" Version="10" />
+        <Pattern Id="6f9c0cb6-ca0d-4482-8596-eb1b30671d84" Version="10" />
+        <Pattern Id="ce83c2b2-bc98-48e5-8569-376c390f7002" Version="10" />
+        <Pattern Id="e10705a5-edee-4438-ae26-1ace62ccac07" Version="10" />
+      </Patterns>
+    </Engine>
+    <Engine Id="aa4d1d0f-f6b9-48a2-a397-05b232c8cd46">
+      <Settings />
+      <Patterns>
+        <Pattern Id="a7359d12-4318-43c2-a02e-57b0d3022079" />
+        <Pattern Id="5e33b7e2-a1f6-4c9a-b142-1dfb2aff982f" />
+        <Pattern Id="3efad169-8d20-4530-9e99-9426e0563a3d" />
+      </Patterns>
+    </Engine>
+    <Engine Id="24b7fd03-eb2c-434c-a467-ccad74cb0754">
+      <Settings />
+      <Patterns>
+        <Pattern Id="29e6b74a-c906-4531-8e8c-9131ee70d3ae" Version="14" />
+        <Pattern Id="b9c5cd1a-f56d-43b5-b2ca-72431acd47f8" />
+      </Patterns>
+    </Engine>
+    <Engine Id="1d9e01a9-272d-42ae-b4da-6df330505fe0">
+      <Settings />
+      <Patterns>
+        <Pattern Id="d0141861-391e-41ce-b290-4788d55a978d" />
+        <Pattern Id="634f737b-596a-45b5-8e7d-8109ab0bc38b" />
+        <Pattern Id="b5935e88-8057-494b-afd6-c8bb8fa10e80" />
+        <Pattern Id="f23983e9-dbba-4620-8f59-246284ca800d" />
+        <Pattern Id="91a6e152-b554-46f0-b16d-0e5196db0281" />
+        <Pattern Id="84e7ec63-3a97-40db-b8ab-ad26cdde2ea4" />
+        <Pattern Id="625a2326-f612-4e84-a1fb-e81bdb1379f3" />
+        <Pattern Id="4d662237-3a59-495b-b1c1-71c8acea213e" />
+        <Pattern Id="49e1b42b-92b1-4d27-b68e-d38a571aa059" />
+        <Pattern Id="a9bf80d4-6982-4149-9b4c-506b3a633f29" />
+        <Pattern Id="68f4e99f-81da-46c1-8c53-2afba65ac38d" />
+        <Pattern Id="9aa40a00-ee80-4e11-9955-8804c8e7ace3" />
+        <Pattern Id="cadc04b6-dea7-40b4-adbd-0f7eb8bf5f80" />
+        <Pattern Id="266df059-232c-4c07-b076-09fcee0d7e9a" />
+        <Pattern Id="3608c18f-2541-451c-a121-85d32a5d9e1f" />
+        <Pattern Id="140663f2-82d1-4351-be22-1f38b1dcfd50" />
+        <Pattern Id="a160fa40-b5d7-4756-b741-62459caeee37" />
+        <Pattern Id="d60dbf86-7852-4c8f-a8a3-91170a05f697" />
+        <Pattern Id="21aa7b50-f8fe-4290-8f1d-faf3a9be6cdc" />
+        <Pattern Id="0f1072ad-d228-4165-b12b-079bd6043d72" />
+        <Pattern Id="a4723e32-7db7-438b-ab05-35a07ef94f80" />
+        <Pattern Id="b8954d7b-4cf0-475b-918d-e04ac1f0bb23" />
+      </Patterns>
+    </Engine>
+    <Engine Id="740688e6-38b1-460c-8787-560b42b36b15">
+      <Settings />
+      <Patterns>
+        <Pattern Id="bb3d29de-9ca3-49a0-85fb-e843ec397157" />
+        <Pattern Id="798934ed-e882-481d-bcc5-c0c37a778b54" />
+        <Pattern Id="9744b418-4e8b-4290-ac45-5f26c6414bb3" />
+        <Pattern Id="18b94420-1257-4be7-ba51-cebed8f0912d" />
+        <Pattern Id="51c6ec25-8090-4014-bae6-18557c6b2ef8" />
+        <Pattern Id="9bbedd0e-ab3e-4fbe-8372-e0c38d307ea3" />
+        <Pattern Id="aa3bafd1-19a7-43f3-b2f7-35ebd6c3b22a" />
+        <Pattern Id="6b6ea74a-0b60-43a1-aec1-0faf234c4143" Version="8" />
+        <Pattern Id="8da9369f-e0ae-4291-981d-68c6c757f6dd" />
+        <Pattern Id="47fc39de-2702-42b1-b67f-eb2deb719026" />
+        <Pattern Id="ddd7c6db-f852-4778-9faf-b21a3a19c6d6" />
+        <Pattern Id="0da9ec19-e7bc-4370-9f6f-97e629f9cec6" />
+        <Pattern Id="3694856d-7a4a-42fd-b93a-7cdd683852bd" />
+        <Pattern Id="aa0e5243-9966-4895-806d-76cf728b8da0" Version="13" />
+        <Pattern Id="dc08b525-0383-4bc3-a8bc-87852010c834" />
+        <Pattern Id="ba939921-c2ce-4fdc-afde-699536dfd71c" />
+        <Pattern Id="5289b2ff-58c9-4d76-a56c-bb3e441ad7ae" />
+        <Pattern Id="30a21d30-1d9e-49be-9c73-78e8a605395b" />
+        <Pattern Id="0c0bc1dc-a929-4d12-bb3b-64c5320e2160" />
+        <Pattern Id="6ee42a9a-fe75-40f6-9a1d-43a7db6eacb0" />
+        <Pattern Id="d3fe9c7f-e356-4160-be2e-1f363c5ddfd9" />
+        <Pattern Id="44768b5a-2270-4d93-ad32-5742c9389d6a" />
+        <Pattern Id="8ed6fb93-8907-419a-8a4e-96c526df86cf" Version="2" />
+        <Pattern Id="54675bde-ecf5-4443-9251-336fa70f99c1" />
+        <Pattern Id="94dd9080-99d3-4159-bb80-325f3e900b72" Version="2" />
+        <Pattern Id="71a33d0e-105a-4edd-9996-c09fb3038357" />
+        <Pattern Id="fd4bace0-8068-42c6-a51b-c513fba46fd2" />
+        <Pattern Id="b0349e07-40c8-4008-999b-9f17675d262d" />
+        <Pattern Id="79145979-5336-4f6d-a53c-6e62f43aef52" />
+        <Pattern Id="4218e272-459b-4d05-9543-0ce179c52fd7" />
+        <Pattern Id="5fb7a21d-4631-4620-bcfa-df67cd9a0b6a" />
+        <Pattern Id="5f792d8b-f723-46fa-8e05-aee688a99b84" />
+        <Pattern Id="0c38fd70-2538-4226-bc5d-ff22560e1742" />
+        <Pattern Id="31fd2357-3277-4330-9320-a9661f7cf325" />
+        <Pattern Id="0ad51c8f-bdc3-4408-a765-31eb413ad5fb" Version="9" />
+        <Pattern Id="4a9e088a-3c2a-4a1c-96f6-da2ccaaf54fc" />
+        <Pattern Id="ffdb1747-194a-4c92-b34c-f5d68e3ff545" />
+        <Pattern Id="ab8379e6-8a4a-438f-a6a4-56344872be2b" />
+        <Pattern Id="881db895-6488-40eb-a804-5b38e4dbc96f" />
+        <Pattern Id="fec80b6c-d5a9-48c6-991a-eda4bbbb1619" />
+        <Pattern Id="a7819eca-e84a-4dc9-aebd-37ceb6c31a33" />
+        <Pattern Id="1f458565-e3d4-477c-a70e-0defe4e3b668" />
+        <Pattern Id="a96a00ec-50a4-4a8a-931f-9a27143beb74" />
+        <Pattern Id="0795e3b9-79a3-4be2-99f2-b6a8b07bdf00" />
+        <Pattern Id="0034bd71-14c3-4cc4-8820-ee39b317dd3c" />
+        <Pattern Id="95e0e57e-fd61-426f-a3a4-8025836427d2" />
+        <Pattern Id="8a7836d6-9446-4832-8e97-43b1fa824d7e" />
+        <Pattern Id="795b6e51-b4ba-43cd-bc4a-c98248944820" />
+        <Pattern Id="14d8b7ac-c13f-4af4-be00-3cf03cd2b728" />
+        <Pattern Id="84817dac-a9b5-40f4-a112-b89b7c4cc3bd" />
+        <Pattern Id="4ec2ff36-6e08-4f3c-ba5a-ddcf306df083" />
+        <Pattern Id="a05932aa-c255-4955-a11e-c183e97c15cc" />
+        <Pattern Id="a788b7c5-0cf4-4175-860c-db16807660ba" />
+        <Pattern Id="5be4898b-c966-4fa9-aea4-e6f01671204c" />
+        <Pattern Id="1dddcd1a-f882-42d7-be6f-1c92cdc708c9" />
+        <Pattern Id="7de3c4fe-8f33-4483-b601-2fbd8fae7979" />
+        <Pattern Id="5d5443c8-e6bf-41e4-b005-eaa3e4bf6ec5" />
+        <Pattern Id="db021bfd-5c59-4761-a836-3586700bcf62" />
+        <Pattern Id="836a01cc-fc6d-4231-bfe2-57de2c18ed34" />
+        <Pattern Id="a2437dc8-d9c0-4004-8596-d3a9efcfa487" />
+        <Pattern Id="db527dae-e335-4022-b63f-6fe238b21b03" />
+        <Pattern Id="e553880b-20b7-4fa7-be69-789024680000" />
+        <Pattern Id="a38132a3-c78f-4935-ab5a-9ab06b843e56" />
+        <Pattern Id="57ebb190-c9f0-4fdb-9946-c77ac9f1ccf6" />
+        <Pattern Id="d6276ae8-fdd0-486e-afa7-c5ce6f55c4a4" />
+        <Pattern Id="63167dd9-1468-4258-b645-5b73bcfcb06f" />
+        <Pattern Id="b8a36912-1e6c-49e6-823e-a3705db70601" />
+        <Pattern Id="983e8131-57f5-45b7-8255-a3d8df3a8933" />
+        <Pattern Id="373d4b50-a56f-4701-bec5-b8678ed57bd6" />
+        <Pattern Id="da7f89b8-0db0-4571-b58d-19875c3cf9f3" />
+        <Pattern Id="c042b9d6-f76f-411b-8dd9-7778e50f1cf8" />
+        <Pattern Id="ed306284-5413-452c-9a73-097638712211" />
+        <Pattern Id="28ad2257-04bb-45b2-94a4-cca0cb4f80c6" />
+        <Pattern Id="db609ca5-d7ba-4510-bd16-5c72965f5f19" />
+        <Pattern Id="4a484c28-e7cc-4aae-91c3-2af0f9050c49" />
+        <Pattern Id="f91cdb49-2449-48b9-898e-eb4b8e2e4f33" />
+        <Pattern Id="d5134626-dab7-4ece-a43f-51906d5e342f" />
+        <Pattern Id="b478a590-4306-4325-95bb-0c1b0c39d189" />
+        <Pattern Id="6a7563c9-b747-406f-9441-8937328708ef" />
+        <Pattern Id="c96cadbd-c86e-48cb-86f2-9165f9d9c83d" Version="2" />
+        <Pattern Id="efc9b797-1368-4bca-88f9-35289117e1ba" />
+      </Patterns>
+    </Engine>
+  </Engines>
+  <ResourceModifiers />
+  <Settings>
+    <CustomHeaders>
+      <CustomHeader Name="X-Scanner" Value="Netsparker" Enabled="true" />
+    </CustomHeaders>
+    <FormValues>
+      <FormValue Name="Email" Value="netsparker@example.com" Pattern="(?im)[\w\d]*mail[\w\d]*" Match="RegEx" MatchTarget="1" Type="email" Force="false" Ordinal="0" />
+      <FormValue Name="Name" Value="Smith" Pattern="(?im)[\w\d]*name|login|user[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Date" Value="01/01/2011" Pattern="(?im)[\w\d]*date[\w\d]*" Match="RegEx" MatchTarget="1" Type="date" Force="false" Ordinal="0" />
+      <FormValue Name="Birth" Value="01/01/1987" Pattern="(?im)[\w\d]*birth[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Before" Value="01/01/2030" Pattern="(?im)[\w\d]*before[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="After" Value="01/01/1950" Pattern="(?im)[\w\d]*after[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="City" Value="Chicago" Pattern="(?im)[\w\d]*city[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="State" Value="IL" Pattern="(?im)[\w\d]*state[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="County" Value="MIDDX" Pattern="(?im)[\w\d]*county[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Postal Code" Value="60612" Pattern="(?im)[\w\d]*postal[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Telephone" Value="5234534558" Pattern="(?im)[\w\d]*tel[\w\d]*" Match="RegEx" MatchTarget="1" Type="tel" Force="false" Ordinal="0" />
+      <FormValue Name="SSN" Value="987-65-4320" Pattern="(?im)[\w\d]*ssn[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="IP" Value="208.100.0.117" Pattern="(?im)[\w\d]*ip[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="URL" Value="http://www.example.com" Pattern="(?im)[\w\d]*url|website|site|domain|web|uri|link[\w\d]*" Match="RegEx" MatchTarget="1" Type="url" Force="false" Ordinal="0" />
+      <FormValue Name="Credit Card" Value="4916613944329494" Pattern="[\w\d]*cc|credit_?card|card[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="CVV2" Value="586" Pattern="[\w\d]*cvv[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Time" Value="00:00:00" Match="RegEx" MatchTarget="1" Type="time" Force="false" Ordinal="0" />
+      <FormValue Name="Datetime" Value="2011-01-01T00:00:00Z" Match="RegEx" MatchTarget="1" Type="datetime" Force="false" Ordinal="0" />
+      <FormValue Name="Local Datetime" Value="2011-01-01T00:00:00" Match="RegEx" MatchTarget="1" Type="datetime-local" Force="false" Ordinal="0" />
+      <FormValue Name="Month" Value="2011-01" Match="RegEx" MatchTarget="1" Type="month" Force="false" Ordinal="0" />
+      <FormValue Name="Week" Value="2011-W01" Match="RegEx" MatchTarget="1" Type="week" Force="false" Ordinal="0" />
+      <FormValue Name="Color" Value="#ffffff" Match="RegEx" MatchTarget="1" Type="color" Force="false" Ordinal="0" />
+      <FormValue Name="TCKN" Value="10000000146" Pattern="tc[kn]?" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="#DEFAULT#" Value="3" Pattern="" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+    </FormValues>
+    <AutoCompleteEnabledTextInputValues>
+      <InputValue Value="CC" />
+      <InputValue Value="*credit*" />
+      <InputValue Value="*login*" />
+      <InputValue Value="*logon*" />
+      <InputValue Value="*sign*" />
+      <InputValue Value="*CVV*" />
+      <InputValue Value="*pass*" />
+      <InputValue Value="*user*" />
+      <InputValue Value="*account*" />
+      <InputValue Value="pwd" />
+    </AutoCompleteEnabledTextInputValues>
+    <SensitiveKeywords>
+      <SensitiveKeyword Pattern="\b(?&gt;admin(?:istrator)?)\b" />
+      <SensitiveKeyword Pattern="\b(?&gt;pass(?:w(?:or)?d)?)\b" />
+      <SensitiveKeyword Pattern="\b(?&gt;user(?:name)?)\b" />
+      <SensitiveKeyword Pattern="\b(?:login)\b" />
+      <SensitiveKeyword Pattern="\b(?:secret)\b" />
+      <SensitiveKeyword Pattern="\b(?:private)\b" />
+      <SensitiveKeyword Pattern="\b(?:secure)\b" />
+      <SensitiveKeyword Pattern="\b(?:protected)\b" />
+      <SensitiveKeyword Pattern="\b(?:backup)\b" />
+      <SensitiveKeyword Pattern="\b(?:webadmin)\b" />
+      <SensitiveKeyword Pattern="\b(?:manager?)\b" />
+      <SensitiveKeyword Pattern="\b(?:upload)\b" />
+      <SensitiveKeyword Pattern="\b(?:file(?:admin|manager))\b" />
+      <SensitiveKeyword Pattern="\b(?:account)\b" />
+      <SensitiveKeyword Pattern="\b(?:uid)\b" />
+      <SensitiveKeyword Pattern="\b(?:uname)\b" />
+      <SensitiveKeyword Pattern="\b(?:usr)\b" />
+      <SensitiveKeyword Pattern="\b(?:pwd)\b" />
+      <SensitiveKeyword Pattern="\b(?:todo)\b" />
+      <SensitiveKeyword Pattern="\b(?:hack)\b" />
+      <SensitiveKeyword Pattern="\b(?:xxx)\b" />
+      <SensitiveKeyword Pattern="\b(?:fix(?:me)?)\b" />
+      <SensitiveKeyword Pattern="\b(?:credentials?)\b" />
+      <SensitiveKeyword Pattern="\b(?:debug)\b" />
+      <SensitiveKeyword Pattern="\b(?:root)\b" />
+      <SensitiveKeyword Pattern="\b(?:bug)\b" />
+      <SensitiveKeyword Pattern="\b(?:problem)\b" />
+      <SensitiveKeyword Pattern="\b(?:bad)\b" />
+      <SensitiveKeyword Pattern="\b(?:hope)\b" />
+      <SensitiveKeyword Pattern="\b(?:overflow)\b" />
+      <SensitiveKeyword Pattern="\b(?:crash)\b" />
+      <SensitiveKeyword Pattern="\b(?:inject)\b" />
+      <SensitiveKeyword Pattern="\b(?:xss)\b" />
+      <SensitiveKeyword Pattern="\b(?:trust)\b" />
+    </SensitiveKeywords>
+    <IgnoreParameters>
+      <IgnoreParameter Name="ASP.NET VIEWSTATE" Pattern="__VIEWSTATE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GET" Pattern="__VIEWSTATE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __EVENTVALIDATION" Pattern="__EVENTVALIDATION" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTVALIDATION GET" Pattern="__EVENTVALIDATION" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST" Pattern="__ASYNCPOST" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTTARGET" Pattern="__EVENTTARGET" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTTARGET GET" Pattern="__EVENTTARGET" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __EVENTARGUMENT" Pattern="__EVENTARGUMENT" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTARGUMENT GET" Pattern="__EVENTARGUMENT" Type="GET" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE ENC GET" Pattern="__VIEWSTATEENCRYPTED" Type="GET" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE ENC POST" Pattern="__VIEWSTATEENCRYPTED" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GENERATOR" Pattern="__VIEWSTATEGENERATOR" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GENERATOR GET" Pattern="__VIEWSTATEGENERATOR" Type="GET" />
+      <IgnoreParameter Name="ASP.NET COMPRESSED VIEWSTATE" Pattern="__COMPRESSEDVIEWSTATE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET COMPRESSED VIEWSTATE GET" Pattern="__COMPRESSEDVIEWSTATE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONX" Pattern="__SCROLLPOSITIONX" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONX GET" Pattern="__SCROLLPOSITIONX" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONY" Pattern="__SCROLLPOSITIONY" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONY GET" Pattern="__SCROLLPOSITIONY" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __LASTFOCUS" Pattern="__LASTFOCUS" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __LASTFOCUS GET" Pattern="__LASTFOCUS" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __PREVIOUSPAGE" Pattern="__PREVIOUSPAGE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __PREVIOUSPAGE GET" Pattern="__PREVIOUSPAGE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST" Pattern="__ASYNCPOST" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST GET" Pattern="__ASYNCPOST" Type="GET" />
+      <IgnoreParameter Name="Java Faces ViewState" Pattern="_javax.faces.ViewState" Type="POST" />
+      <IgnoreParameter Name="Java Faces ViewState GET" Pattern="_javax.faces.ViewState" Type="GET" />
+      <IgnoreParameter Name="Struts CSRF Nonce" Pattern="org.apache.struts.taglib.html.TOKEN" Type="POST" />
+      <IgnoreParameter Name="Struts CSRF Nonce GET" Pattern="org.apache.struts.taglib.html.TOKEN" Type="GET" />
+      <IgnoreParameter Name="JAVA Session ID" Pattern="jsessionid" Type="GET" />
+      <IgnoreParameter Name="PHP Session ID" Pattern="PHPSESSID" Type="GET" />
+    </IgnoreParameters>
+    <IgnoreContentTypes>
+      <InputValue Value="application/pdf" />
+      <InputValue Value="application/x-7z-compressed" />
+      <InputValue Value="application/x-bzip2" />
+      <InputValue Value="application/x-compress" />
+      <InputValue Value="application/x-gtar" />
+      <InputValue Value="application/x-gzip" />
+      <InputValue Value="application/x-lzip" />
+      <InputValue Value="application/x-lzma" />
+      <InputValue Value="application/x-rar-compressed" />
+      <InputValue Value="application/x-tar" />
+      <InputValue Value="application/zip" />
+      <InputValue Value="image/bmp" />
+      <InputValue Value="image/jpeg" />
+      <InputValue Value="image/png" />
+      <InputValue Value="video/mpeg" />
+    </IgnoreContentTypes>
+    <SecurityProtocol>Ssl3 Tls Tls11 Tls12</SecurityProtocol>
+    <IgnoredEmailPatterns>
+      <EmailPattern Value="*@example.com" />
+      <EmailPattern Value="*@*.example.com" />
+    </IgnoredEmailPatterns>
+  </Settings>
+  <OptimizerOptions />
+</ScanPolicy>

@@ -40,15 +40,26 @@ namespace Netsparker
         /// <returns></returns>
         public bool CreateScan(string url,bool profile)
         {
+
             try
-            {
+            {  
+                    /*
+                     * komut satırı parametreleri
+                     *      auto: Taramayı calistirmak icin kullanilir.
+                     *      silent: Hata mesajlarini bastirmak icin kullanilir.
+                     *      url: Taranacak olan web adresi veya servis adresidir.
+                     *      report: Olusturulacak olan raporun oluşturulacağı konum ve adı
+                     *      reporttemplate: Olusturulacak olan raporun tipi. (Pdf, html, xml gibi secenekler mevcuttur.
+                     */
+
                 if (this.Session != null && profile == false)
-                {                  
-                    return Session.ExecuteCommand("/a / " + (" /url " + url) + (" /report " + "\"" +this.ReportLocation + @"scan_report_"+ Guid.NewGuid() +".xml" + "\" ") + "/reporttemplate " + "\"Vulnerabilities List (XML)\"","Scan");
+                {             
+                  
+                    return Session.ExecuteCommand("/auto /silent / " + (" /url " + url) + (" /report " + "\"" +this.ReportLocation + @"scan_report_"+ Guid.NewGuid() +".xml" + "\" ") + "/reporttemplate " + "\"Vulnerabilities List (XML)\"","Scan");
                 }
                 else if(this.Session != null && profile == true)
                 {
-                    return Session.ExecuteCommand("/a  /profile "+ "\"" +"Default_Policy" + "\" " + (" /url " + url) + (" /report " + "\"" + this.ReportLocation + @"scan_report_" + Guid.NewGuid() + ".xml" + "\" ") + "/reporttemplate " + "\"Vulnerabilities List (XML)\"", "Scan");
+                    return Session.ExecuteCommand("/auto  /silent /profile "+ "\"" +"Default_Profile" + "\" " + (" /url " + url) + (" /report " + "\"" + this.ReportLocation + @"scan_report_" + Guid.NewGuid() + ".xml" + "\" ") + "/reporttemplate " + "\"Vulnerabilities List (XML)\"", "Scan");
                 }
                 else
                     return false;

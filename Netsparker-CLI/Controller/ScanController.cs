@@ -8,8 +8,10 @@ using System.Xml;
 
 namespace Netsparker_CLI.Controller
 {
-    public class ScanController
+    public class ScanController:ScannerController
     {
+        
+
         public ScanController()
         {
                 
@@ -35,30 +37,45 @@ namespace Netsparker_CLI.Controller
           
         }
 
-        public bool ScanCreate(NetsparkerManager netsparkerManager, string target,string LogInFormURL,string username,string password)
+        /// <summary>
+        /// Bu fonksiyon profile ile tarama başlatır.
+        /// </summary>
+        /// <param name="netsparkerManager">Netsparkmanager instance</param>
+        /// <param name="target">Target Address' that will scan</param>
+        /// <param name="LogInFormURL">Login page of Target</param>
+        /// <param name="username">Login Username</param>
+        /// <param name="password">Login Password</param>
+        /// <param name="policyID">Selected Policy</param>
+        /// <returns></returns>
+        public bool ScanCreate(NetsparkerManager netsparkerManager, string target,string LogInFormURL,string username,string password,string policyID)
         {
             try
             {
 
-                //Target URL için
-                XMLNodeEdit("/ScanProfile/TargetUrl", "TargetUrl", target);
+                //Default_Profile dosyası PolicyId elementi
+                EditXMLElement("/ScanProfile/PolicyId", "PolicyId", policyID, PATH + @"\Profile\Default_Profile.xml");
 
-                //LogOutFormURL için
-                XMLNodeEdit("/ScanProfile/FormAuthenticationSettings/LogoutRedirectPattern", "LogoutRedirectPattern", LogInFormURL);
+                //Default_Profile dosyası TargetURL elementi
+                EditXMLElement("/ScanProfile/TargetUrl", "TargetUrl", target,PATH+@"\Profile\Default_Profile.xml");
 
-                //LogInFormURL için
-                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings", "LoginFormUrl",LogInFormURL);
+                //Default_Profile dosyası LogOutFormURL elementi
+                EditXMLElement("/ScanProfile/FormAuthenticationSettings/LogoutRedirectPattern", "LogoutRedirectPattern", LogInFormURL, PATH + @"\Profile\Default_Profile.xml");
 
-                //Username İçin
-                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Username", username);
+                //Default_Profile dosyası FormAuthenticationSettings elementi LogInFormURL attribute 
+                EditXMLAttribute("/ScanProfile/FormAuthenticationSettings", "LoginFormUrl",LogInFormURL, PATH + @"\Profile\Default_Profile.xml");
 
-                //Password İçin
-                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Password", password);
+                //Default_Profile dosyası FormAuthenticationPersona elementi Username attribute
+                EditXMLAttribute("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Username", username, PATH + @"\Profile\Default_Profile.xml");
 
-                //Password Encrypted İçin
-                XMLAttributeEdit("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "IsPasswordEncrypted", "false");
+                //Default_Profile dosyası FormAuthenticationPersona elementi Passord attribute
+                EditXMLAttribute("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "Password", password, PATH + @"\Profile\Default_Profile.xml");
 
-                System.IO.File.Copy(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml", @"C:\Users\emreakirmak\Documents\Netsparker\Profiles\Default_Policy.xml",true);
+                //Default_Profile dosyası FormAuthenticationPersona elementi IsPasswordEncrypted attribute
+                EditXMLAttribute("/ScanProfile/FormAuthenticationSettings/Personas/FormAuthenticationPersona", "IsPasswordEncrypted", "false", PATH + @"\Profile\Default_Profile.xml");
+
+
+                string documentFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                System.IO.File.Copy(PATH + @"\Profile\Default_Profile.xml", documentFolder + @"\Netsparker\Profiles\Default_Profile.xml",true);
 
                 return netsparkerManager.CreateScan(target,true);
             }
@@ -70,24 +87,6 @@ namespace Netsparker_CLI.Controller
 
         }
 
-        private void XMLNodeEdit(string NodePath,string Node, string Value)
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
-            doc.DocumentElement.SelectSingleNode(NodePath).InnerText = Value;
-            doc.Save(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
-          
-
-
-        }
-
-        private void XMLAttributeEdit(string NodePath, string Node, string Value)
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
-            doc.DocumentElement.SelectSingleNode(NodePath).Attributes[Node].Value = Value;
-            doc.Save(@"C:/Users/emreakirmak/Desktop/Netsparker-CLI/Netsparker-CLI/ModelXML/Default_Policy.xml");
-            
-        }
+      
     }
 }

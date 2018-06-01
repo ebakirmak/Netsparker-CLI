@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScanPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="ed8545c8-6fbc-4270-99dd-da29b834e232" Version="13">
+  <Description>Performs only SQL Injection  checks.</Description>
+  <Engines>
+    <Engine Id="5faed4fa-f992-4811-9574-32d781cffd6b">
+      <Settings />
+      <Patterns>
+        <Pattern Id="cba56663-81da-4a39-9cb0-567a1d5e3656" />
+        <Pattern Id="bdfc3421-d6fb-492b-8421-9e5276b65a81" />
+        <Pattern Id="15d24b44-07cd-456d-9900-57d6aa971037" />
+        <Pattern Id="3cb6a0f0-4f83-435d-a005-a24560888e1e" />
+        <Pattern Id="b56b74b8-6fd9-4779-a6ab-d4f8a5db2e60" />
+        <Pattern Id="a8f118c8-e059-4c34-8320-94ea52112a9e" />
+        <Pattern Id="2a8aa329-7cc7-442e-9220-e098a119b1d3" />
+        <Pattern Id="1fe54c56-2441-4975-a70f-c508418443fd" />
+        <Pattern Id="232c3f7b-ca9c-4d24-8af2-e7b852513873" />
+        <Pattern Id="d0243715-082e-4941-a75e-2857b0924c3b" />
+        <Pattern Id="61b54374-a9d6-41e9-b637-710f57a93bc1" />
+        <Pattern Id="9b022ee2-b324-4119-b611-c88ec6bd3bc2" />
+        <Pattern Id="12727167-7b2b-40b1-bc27-a309d4adbb67" />
+        <Pattern Id="c212801e-ee0b-45a2-8a3a-653ee4ccd69c" />
+        <Pattern Id="b59055a0-08b4-49bb-984c-7a4c8944b09a" />
+        <Pattern Id="62584785-abe8-4263-9dc7-a6c567067d58" />
+        <Pattern Id="00a68b69-5e21-42c2-b8c9-6b58ed6fa501" />
+        <Pattern Id="9507a84f-3348-4502-8e6b-a5795bacb851" />
+        <Pattern Id="2b69377c-3e1d-4729-9228-ac8da6de2552" />
+        <Pattern Id="928cdec6-b568-45f9-8057-4cea71d1aaed" />
+        <Pattern Id="a05e0f44-70f5-4a59-be9d-b35d00e5ef54" />
+        <Pattern Id="08ff7858-0e4e-447d-9602-2eef954967df" />
+        <Pattern Id="047bfaf9-bb5d-4ae4-8285-0ecf00e0ba85" />
+        <Pattern Id="7c851a65-0139-4aff-9d6e-ffde6a47b4a3" />
+        <Pattern Id="328401d7-4715-4569-9ece-34bbc271b691" />
+        <Pattern Id="6115e454-11d0-4d3b-b2e7-af393ac12e35" />
+        <Pattern Id="addb319e-328e-4285-9a84-9439bb6a3c2d" />
+        <Pattern Id="b016d14c-77d3-49c5-9eb2-8dccd9f4a01b" />
+        <Pattern Id="20f8737e-1e6f-44ef-9c6f-9818646c0cb2" />
+        <Pattern Id="d3928bea-44ee-4abe-af77-6f5b59f01392" />
+        <Pattern Id="b1d9ad5b-3f54-42b3-8c52-10a91594e0c4" />
+        <Pattern Id="450e823a-5fe1-4b3c-88d9-5768289be715" />
+        <Pattern Id="4c11200c-d9e6-42c6-8073-dbacb0915c77" />
+        <Pattern Id="b04e462d-385f-4d0f-b44f-a084672cd34d" />
+        <Pattern Id="e48f94e5-7cb7-46d9-8fe9-e4542ca29e10" />
+        <Pattern Id="624764b1-068b-4ffb-917d-e133a6e464b5" />
+        <Pattern Id="d6276025-b390-4b95-9574-4fc1e4f2370b" />
+        <Pattern Id="d398d0f6-d8fc-452b-9fc5-d16d21111a01" />
+        <Pattern Id="3c14809c-a3ef-4995-a986-e033423b140c" />
+        <Pattern Id="fabdb9ba-bd90-4dec-af9a-a79885e49b35" />
+        <Pattern Id="3f7df232-f8db-4bd2-a72e-ba3bc89bbdaa" />
+      </Patterns>
+    </Engine>
+    <Engine Id="0f769194-3925-445d-9198-1e6daef1dd89">
+      <Settings>
+        <ScanPolicySetting Name="ProofGenerationEnabled">False</ScanPolicySetting>
+        <ScanPolicySetting Name="ProofSharingEnabled">True</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="4053039d-b257-4a05-a322-9dc3beccfd01" />
+        <Pattern Id="bdf0d6fd-8d16-4de6-9228-ac47cae6a16d" />
+        <Pattern Id="52c99165-e822-4cfe-9cfd-826e12cbb13a" />
+        <Pattern Id="67dc1761-8916-4349-9f66-c0187967f9c4" />
+        <Pattern Id="13c1e739-fcf0-4c84-99b7-caf07d722921" />
+        <Pattern Id="d34ff049-7692-4bbd-a020-5d1a231900ca" />
+        <Pattern Id="96a58ec3-f93f-4a81-833d-c98901fabc9d" />
+        <Pattern Id="37a622ec-0b14-4b68-b2b3-c2ba5f21b4c6" />
+        <Pattern Id="c5ceb1f8-b2f4-4735-9bf3-2e084b92c58d" />
+        <Pattern Id="baefc111-d1ee-4b3f-9a0b-4d608f3d2e7d" />
+        <Pattern Id="0fbf0ba6-511a-47d7-91ff-592a97967513" />
+        <Pattern Id="d7b8d4c9-0302-44dd-8b94-dd91e4379564" />
+        <Pattern Id="5a2d8c08-3d01-4e41-9718-19cd9c24edf5" />
+        <Pattern Id="0686fdfb-c303-49e4-96c8-4bb4fa2c9f34" />
+        <Pattern Id="34afd6e7-c0cd-444d-9315-069a28813f8a" />
+        <Pattern Id="7c4136f1-a1e0-4ece-9e64-fa80e0212898" />
+        <Pattern Id="d6453ea8-6bab-4517-bdf3-53433d3193a4" />
+        <Pattern Id="b05d0ee3-47e4-49e1-960b-4bca7ead6c23" />
+        <Pattern Id="63d007f5-f4a4-414f-8ba9-d314be673165" />
+        <Pattern Id="a0096503-e12e-4c02-88df-3083d7f8480c" />
+        <Pattern Id="29e44f08-6d3e-4c9d-a228-a0950380dfc2" />
+        <Pattern Id="62b00369-09c5-4be9-9eb9-4552205fd541" />
+        <Pattern Id="0cd0acce-ec8d-4a4f-9408-7010757f83aa" />
+        <Pattern Id="1be823af-95c2-43c4-901b-4d55ed643d4c" />
+        <Pattern Id="c9477583-afaa-4c7e-a15a-d41c5e535794" />
+        <Pattern Id="4fb5b97c-a3d5-4a37-98f7-c89ebb30b1cb" />
+        <Pattern Id="f1a06351-9f0b-47e9-9992-12f126d96e92" />
+        <Pattern Id="601b738a-9c08-4e51-8e96-4d85bc968e76" />
+        <Pattern Id="7ce757e4-665c-4d07-9948-2918cb42a964" />
+        <Pattern Id="490d36f8-8109-466c-a406-e81f76b8175c" />
+        <Pattern Id="b9f9db84-7d98-46f1-b44d-f7c57b495f6e" />
+        <Pattern Id="9b617e1b-31c2-4b14-ba19-42260f996148" />
+        <Pattern Id="53360799-53ba-4dd1-bda2-9d887677ae4a" />
+        <Pattern Id="7a848a19-8345-495b-93bf-3ce7e2c2abff" />
+        <Pattern Id="692875b1-780c-4258-abcc-b91ba56fc06c" />
+        <Pattern Id="767e46fc-c2c2-428c-ba60-f5e558bf1701" />
+        <Pattern Id="2c6d3785-f147-4201-9383-78367eb48128" />
+        <Pattern Id="13d1bdb8-ffaf-4679-a0f2-1334afb8af43" />
+        <Pattern Id="658f5663-fb5b-4ea8-b055-8bd1c57bc9ad" />
+        <Pattern Id="914590f6-0163-4cc7-ad39-dd1f8cd305c2" />
+        <Pattern Id="01c68992-0098-4ec9-a4f8-e808a9a44f07" />
+        <Pattern Id="776fde66-768e-4328-8bb9-e75df7b03945" />
+        <Pattern Id="206c9a99-65b2-4d15-b3b6-44a2ee5207ce" />
+        <Pattern Id="dbdb2f63-92c1-4093-b176-03092d89bcb5" />
+        <Pattern Id="e78923e4-cbaa-4096-b440-f2ca26b50d05" />
+        <Pattern Id="cf64344c-2b66-46d3-8ed8-56da7ae6c0a0" />
+        <Pattern Id="dc2252fa-b723-4503-a1c5-ad0bd718125e" />
+        <Pattern Id="b3962544-a323-46db-861b-a4ac3ebd65df" />
+        <Pattern Id="f157e684-6793-4f55-a58a-7c07761dc01b" />
+        <Pattern Id="86603034-16ef-4284-8d4c-60a02a45b477" />
+        <Pattern Id="b5ffaa69-5f0a-4a28-aa8c-04ba445abf5c" />
+        <Pattern Id="d1dddc7b-c0f7-443c-99bc-05feb2aa2be9" />
+        <Pattern Id="dc673332-548b-4df8-86c5-ba24bac4f225" />
+        <Pattern Id="641d8b07-7e90-4dbc-8480-a3429abff9f8" />
+        <Pattern Id="92c87c6e-c47c-4226-b005-c5cb7b0e76e9" />
+        <Pattern Id="aed8cbfb-eae3-4f33-9af4-f5c9f02f44e6" />
+      </Patterns>
+    </Engine>
+    <Engine Id="08f31830-803c-4bb5-a5e7-dc3d3062dc52">
+      <Settings>
+        <ScanPolicySetting Name="DatabaseTypes">All</ScanPolicySetting>
+        <ScanPolicySetting Name="ProofGenerationEnabled">True</ScanPolicySetting>
+        <ScanPolicySetting Name="ProofSharingEnabled">True</ScanPolicySetting>
+      </Settings>
+      <Patterns>
+        <Pattern Id="007789cf-4cf2-4042-9c1d-484ad3c7c47d" />
+      </Patterns>
+    </Engine>
+    <Engine Id="82be2dcc-c99d-43a2-88e8-e96dad7f23e3">
+      <Settings />
+      <Patterns>
+        <Pattern Id="64c3bef3-4980-475d-a6f7-a18bd5fe9a92" Version="10" />
+        <Pattern Id="ff3bb6ba-6299-41cf-a263-a4802402aa14" Version="10" />
+        <Pattern Id="b7b4b594-c713-4497-bb14-7b5ff9d1cba3" Version="10" />
+        <Pattern Id="1e66206f-b50a-44ff-af66-2ee590f164c7" Version="10" />
+        <Pattern Id="2a07161b-88d1-47af-9e88-98e6f1d2ecfc" Version="10" />
+        <Pattern Id="139e9482-7de7-4742-9391-3063a75213a7" Version="10" />
+        <Pattern Id="4998be87-cd39-4097-9ea8-6695b171f8be" Version="10" />
+        <Pattern Id="6224526e-de38-4031-acc4-8d560432cfd1" Version="10" />
+        <Pattern Id="e09efc14-d8f1-44db-a8bf-f8dc35370cf0" Version="10" />
+        <Pattern Id="84db0711-6caf-4636-9b80-0c883e6a4e9c" Version="10" />
+        <Pattern Id="5a7001aa-8e76-40be-aee4-aaa6bdc260df" Version="10" />
+        <Pattern Id="c91a202f-5825-4fa1-a451-ed8d60a3651f" Version="10" />
+        <Pattern Id="a33c90a6-d1dd-432e-ae59-17cbce784f70" Version="10" />
+        <Pattern Id="66c1b235-51a5-4f88-b617-cdb8b214bb31" Version="10" />
+        <Pattern Id="c936f2bc-a3ce-498f-93f9-0acc90e27962" />
+        <Pattern Id="ea3aa34b-e788-4fe5-81e6-32f06179afa7" Version="10" />
+        <Pattern Id="3af0a9a4-de1a-42ab-92e8-aefa8e3aaae8" Version="10" />
+        <Pattern Id="def53143-b959-4ae7-ab26-bb74f521fdb0" />
+        <Pattern Id="8c692c9b-3ae4-4135-88a1-c9ce4b12cc88" Version="10" />
+        <Pattern Id="b09d1cf5-3b31-4618-ae03-8583566e68b4" Version="10" />
+        <Pattern Id="6a697017-9f74-462f-892c-1019a75c0d12" />
+        <Pattern Id="50d75cb2-7180-42d5-a0e2-29403e77248d" Version="10" />
+        <Pattern Id="32435183-0409-4fcf-91c8-39b4ef089014" Version="10" />
+        <Pattern Id="5e7d232a-8b9a-41c4-90a6-07d2f27e4e29" Version="10" />
+        <Pattern Id="3e78322f-17ad-4109-8f02-043f6ec14656" Version="10" />
+        <Pattern Id="13793722-adc2-4844-928e-c1e357164a05" Version="10" />
+        <Pattern Id="dbd9858d-9513-4a7b-a7e0-1faeb1d17d67" Version="10" />
+        <Pattern Id="6f9c0cb6-ca0d-4482-8596-eb1b30671d84" Version="10" />
+        <Pattern Id="ce83c2b2-bc98-48e5-8569-376c390f7002" Version="10" />
+        <Pattern Id="e10705a5-edee-4438-ae26-1ace62ccac07" Version="10" />
+      </Patterns>
+    </Engine>
+  </Engines>
+  <ResourceModifiers />
+  <Settings>
+    <CustomHeaders>
+      <CustomHeader Name="X-Scanner" Value="Netsparker" Enabled="true" />
+    </CustomHeaders>
+    <FormValues>
+      <FormValue Name="Email" Value="netsparker@example.com" Pattern="(?im)[\w\d]*mail[\w\d]*" Match="RegEx" MatchTarget="1" Type="email" Force="false" Ordinal="0" />
+      <FormValue Name="Name" Value="Smith" Pattern="(?im)[\w\d]*name|login|user[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Date" Value="01/01/2011" Pattern="(?im)[\w\d]*date[\w\d]*" Match="RegEx" MatchTarget="1" Type="date" Force="false" Ordinal="0" />
+      <FormValue Name="Birth" Value="01/01/1987" Pattern="(?im)[\w\d]*birth[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Before" Value="01/01/2030" Pattern="(?im)[\w\d]*before[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="After" Value="01/01/1950" Pattern="(?im)[\w\d]*after[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="City" Value="Chicago" Pattern="(?im)[\w\d]*city[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="State" Value="IL" Pattern="(?im)[\w\d]*state[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="County" Value="MIDDX" Pattern="(?im)[\w\d]*county[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Postal Code" Value="60612" Pattern="(?im)[\w\d]*postal[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Telephone" Value="5234534558" Pattern="(?im)[\w\d]*tel[\w\d]*" Match="RegEx" MatchTarget="1" Type="tel" Force="false" Ordinal="0" />
+      <FormValue Name="SSN" Value="987-65-4320" Pattern="(?im)[\w\d]*ssn[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="IP" Value="208.100.0.117" Pattern="(?im)[\w\d]*ip[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="URL" Value="http://www.example.com" Pattern="(?im)[\w\d]*url|website|site|domain|web|uri|link[\w\d]*" Match="RegEx" MatchTarget="1" Type="url" Force="false" Ordinal="0" />
+      <FormValue Name="Credit Card" Value="4916613944329494" Pattern="[\w\d]*cc|credit_?card|card[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="CVV2" Value="586" Pattern="[\w\d]*cvv[\w\d]*" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="Time" Value="00:00:00" Match="RegEx" MatchTarget="1" Type="time" Force="false" Ordinal="0" />
+      <FormValue Name="Datetime" Value="2011-01-01T00:00:00Z" Match="RegEx" MatchTarget="1" Type="datetime" Force="false" Ordinal="0" />
+      <FormValue Name="Local Datetime" Value="2011-01-01T00:00:00" Match="RegEx" MatchTarget="1" Type="datetime-local" Force="false" Ordinal="0" />
+      <FormValue Name="Month" Value="2011-01" Match="RegEx" MatchTarget="1" Type="month" Force="false" Ordinal="0" />
+      <FormValue Name="Week" Value="2011-W01" Match="RegEx" MatchTarget="1" Type="week" Force="false" Ordinal="0" />
+      <FormValue Name="Color" Value="#ffffff" Match="RegEx" MatchTarget="1" Type="color" Force="false" Ordinal="0" />
+      <FormValue Name="TCKN" Value="10000000146" Pattern="tc[kn]?" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+      <FormValue Name="#DEFAULT#" Value="3" Pattern="" Match="RegEx" MatchTarget="1" Force="false" Ordinal="0" />
+    </FormValues>
+    <AutoCompleteEnabledTextInputValues>
+      <InputValue Value="CC" />
+      <InputValue Value="*credit*" />
+      <InputValue Value="*login*" />
+      <InputValue Value="*logon*" />
+      <InputValue Value="*sign*" />
+      <InputValue Value="*CVV*" />
+      <InputValue Value="*pass*" />
+      <InputValue Value="*user*" />
+      <InputValue Value="*account*" />
+      <InputValue Value="pwd" />
+    </AutoCompleteEnabledTextInputValues>
+    <SensitiveKeywords>
+      <SensitiveKeyword Pattern="\b(?&gt;admin(?:istrator)?)\b" />
+      <SensitiveKeyword Pattern="\b(?&gt;pass(?:w(?:or)?d)?)\b" />
+      <SensitiveKeyword Pattern="\b(?&gt;user(?:name)?)\b" />
+      <SensitiveKeyword Pattern="\b(?:login)\b" />
+      <SensitiveKeyword Pattern="\b(?:secret)\b" />
+      <SensitiveKeyword Pattern="\b(?:private)\b" />
+      <SensitiveKeyword Pattern="\b(?:secure)\b" />
+      <SensitiveKeyword Pattern="\b(?:protected)\b" />
+      <SensitiveKeyword Pattern="\b(?:backup)\b" />
+      <SensitiveKeyword Pattern="\b(?:webadmin)\b" />
+      <SensitiveKeyword Pattern="\b(?:manager?)\b" />
+      <SensitiveKeyword Pattern="\b(?:upload)\b" />
+      <SensitiveKeyword Pattern="\b(?:file(?:admin|manager))\b" />
+      <SensitiveKeyword Pattern="\b(?:account)\b" />
+      <SensitiveKeyword Pattern="\b(?:uid)\b" />
+      <SensitiveKeyword Pattern="\b(?:uname)\b" />
+      <SensitiveKeyword Pattern="\b(?:usr)\b" />
+      <SensitiveKeyword Pattern="\b(?:pwd)\b" />
+      <SensitiveKeyword Pattern="\b(?:todo)\b" />
+      <SensitiveKeyword Pattern="\b(?:hack)\b" />
+      <SensitiveKeyword Pattern="\b(?:xxx)\b" />
+      <SensitiveKeyword Pattern="\b(?:fix(?:me)?)\b" />
+      <SensitiveKeyword Pattern="\b(?:credentials?)\b" />
+      <SensitiveKeyword Pattern="\b(?:debug)\b" />
+      <SensitiveKeyword Pattern="\b(?:root)\b" />
+      <SensitiveKeyword Pattern="\b(?:bug)\b" />
+      <SensitiveKeyword Pattern="\b(?:problem)\b" />
+      <SensitiveKeyword Pattern="\b(?:bad)\b" />
+      <SensitiveKeyword Pattern="\b(?:hope)\b" />
+      <SensitiveKeyword Pattern="\b(?:overflow)\b" />
+      <SensitiveKeyword Pattern="\b(?:crash)\b" />
+      <SensitiveKeyword Pattern="\b(?:inject)\b" />
+      <SensitiveKeyword Pattern="\b(?:xss)\b" />
+      <SensitiveKeyword Pattern="\b(?:trust)\b" />
+    </SensitiveKeywords>
+    <IgnoreParameters>
+      <IgnoreParameter Name="ASP.NET VIEWSTATE" Pattern="__VIEWSTATE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GET" Pattern="__VIEWSTATE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __EVENTVALIDATION" Pattern="__EVENTVALIDATION" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTVALIDATION GET" Pattern="__EVENTVALIDATION" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST" Pattern="__ASYNCPOST" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTTARGET" Pattern="__EVENTTARGET" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTTARGET GET" Pattern="__EVENTTARGET" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __EVENTARGUMENT" Pattern="__EVENTARGUMENT" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __EVENTARGUMENT GET" Pattern="__EVENTARGUMENT" Type="GET" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE ENC GET" Pattern="__VIEWSTATEENCRYPTED" Type="GET" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE ENC POST" Pattern="__VIEWSTATEENCRYPTED" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GENERATOR" Pattern="__VIEWSTATEGENERATOR" Type="POST" />
+      <IgnoreParameter Name="ASP.NET VIEWSTATE GENERATOR GET" Pattern="__VIEWSTATEGENERATOR" Type="GET" />
+      <IgnoreParameter Name="ASP.NET COMPRESSED VIEWSTATE" Pattern="__COMPRESSEDVIEWSTATE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET COMPRESSED VIEWSTATE GET" Pattern="__COMPRESSEDVIEWSTATE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONX" Pattern="__SCROLLPOSITIONX" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONX GET" Pattern="__SCROLLPOSITIONX" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONY" Pattern="__SCROLLPOSITIONY" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __SCROLLPOSITIONY GET" Pattern="__SCROLLPOSITIONY" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __LASTFOCUS" Pattern="__LASTFOCUS" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __LASTFOCUS GET" Pattern="__LASTFOCUS" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __PREVIOUSPAGE" Pattern="__PREVIOUSPAGE" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __PREVIOUSPAGE GET" Pattern="__PREVIOUSPAGE" Type="GET" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST" Pattern="__ASYNCPOST" Type="POST" />
+      <IgnoreParameter Name="ASP.NET __ASYNCPOST GET" Pattern="__ASYNCPOST" Type="GET" />
+      <IgnoreParameter Name="Java Faces ViewState" Pattern="_javax.faces.ViewState" Type="POST" />
+      <IgnoreParameter Name="Java Faces ViewState GET" Pattern="_javax.faces.ViewState" Type="GET" />
+      <IgnoreParameter Name="Struts CSRF Nonce" Pattern="org.apache.struts.taglib.html.TOKEN" Type="POST" />
+      <IgnoreParameter Name="Struts CSRF Nonce GET" Pattern="org.apache.struts.taglib.html.TOKEN" Type="GET" />
+      <IgnoreParameter Name="JAVA Session ID" Pattern="jsessionid" Type="GET" />
+      <IgnoreParameter Name="PHP Session ID" Pattern="PHPSESSID" Type="GET" />
+    </IgnoreParameters>
+    <DomParserExclusionCssSelector />
+    <IgnoreContentTypes>
+      <InputValue Value="application/pdf" />
+      <InputValue Value="application/x-7z-compressed" />
+      <InputValue Value="application/x-bzip2" />
+      <InputValue Value="application/x-compress" />
+      <InputValue Value="application/x-gtar" />
+      <InputValue Value="application/x-gzip" />
+      <InputValue Value="application/x-lzip" />
+      <InputValue Value="application/x-lzma" />
+      <InputValue Value="application/x-rar-compressed" />
+      <InputValue Value="application/x-tar" />
+      <InputValue Value="application/zip" />
+      <InputValue Value="image/bmp" />
+      <InputValue Value="image/jpeg" />
+      <InputValue Value="image/png" />
+      <InputValue Value="video/mpeg" />
+    </IgnoreContentTypes>
+    <FileExtensions />
+    <SecurityProtocol>Ssl3 Tls Tls11 Tls12</SecurityProtocol>
+    <IgnoredEmailPatterns>
+      <EmailPattern Value="*@example.com" />
+      <EmailPattern Value="*@*.example.com" />
+    </IgnoredEmailPatterns>
+  </Settings>
+  <OptimizerOptions />
+</ScanPolicy>
