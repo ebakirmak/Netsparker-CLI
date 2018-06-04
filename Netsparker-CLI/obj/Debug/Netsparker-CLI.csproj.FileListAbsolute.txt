@@ -8,3 +8,13 @@ C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker-CLI\obj\Debug\Netsparker-
 C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker-CLI\bin\Debug\Netsparker.dll
 C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker-CLI\bin\Debug\Netsparker.pdb
 C:\Users\emreakirmak\Desktop\Netsparker-CLI\Netsparker-CLI\obj\Debug\Netsparker-CLI.csproj.CopyComplete
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\bin\Debug\Netsparker-CLI.exe.config
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\bin\Debug\Netsparker-CLI.exe
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\bin\Debug\Netsparker-CLI.pdb
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\bin\Debug\Netsparker.dll
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\bin\Debug\Netsparker.pdb
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\obj\Debug\Netsparker-CLI.csprojResolveAssemblyReference.cache
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\obj\Debug\Netsparker-CLI.csproj.CoreCompileInputs.cache
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\obj\Debug\Netsparker-CLI.csproj.CopyComplete
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\obj\Debug\Netsparker-CLI.exe
+C:\Users\emreakirmak\Desktop\Emre\Projects\Netsparker-all\Netsparker-CLI\Netsparker-CLI\obj\Debug\Netsparker-CLI.pdb

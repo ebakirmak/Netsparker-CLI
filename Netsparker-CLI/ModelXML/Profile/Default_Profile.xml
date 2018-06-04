@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScanProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <PolicyId>41a21baf-8062-421b-9a93-a06b1afa8ed4</PolicyId>
+  <PolicyId>0d2a209b-9234-4f40-b16d-f1898a6c6cf3</PolicyId>
   <ReportPolicyId>3990df1f-cb26-46b4-a8e9-854a72f717de</ReportPolicyId>
   <ExcludedLinks>
     <string>(log|sign)\-?(out|off)</string>
@@ -8,7 +8,7 @@
     <string>endsession</string>
   </ExcludedLinks>
   <Cookies />
-  <TargetUrl>http://172.17.6.91:8000/vulnerabilities/fi/?page=include.php</TargetUrl>
+  <TargetUrl>http://172.17.6.52:8000/vulnerabilities/exec/</TargetUrl>
   <AdditionalWebsites />
   <ExcludeLinks>true</ExcludeLinks>
   <Scope>EnteredPathAndBelowScope</Scope>
@@ -16,12 +16,12 @@
   <ImportedLinks />
   <ScanMode>Normal</ScanMode>
   <ParallelAttackerEnabled>true</ParallelAttackerEnabled>
-  <FormAuthenticationSettings Enabled="true" LoginFormUrl="http://172.17.6.91:8000/login.php">
+  <FormAuthenticationSettings Enabled="true" LoginFormUrl="http://172.17.6.52:8000/login.php">
     <CustomScripts />
     <Personas>
       <FormAuthenticationPersona Username="admin" Password="password" IsActive="true" IsPasswordEncrypted="false" />
     </Personas>
-    <LogoutRedirectPattern>http://172.17.6.91:8000/login.php</LogoutRedirectPattern>
+    <LogoutRedirectPattern>http://172.17.6.52:8000/login.php</LogoutRedirectPattern>
     <OverrideTargetUrlWithAuthenticatedPage>false</OverrideTargetUrlWithAuthenticatedPage>
     <DetectBearerToken>true</DetectBearerToken>
   </FormAuthenticationSettings>
